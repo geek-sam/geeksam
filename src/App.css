@@ -1,0 +1,83 @@
+:root {
+  --heroSize: 48px;
+  --headingSize: 20px;
+  --subHeadingSize: 16px;
+  --fontSize: 14px;
+
+  .lightTheme {
+    /* --brandColor: #1faeff; */
+    --brandColor: #0d6efd;
+    --headingColor: #27272a;
+    --textColor: #52525b;
+    --iconColor: #71717a;
+    --cardBgColor: #fafafa;
+    --shadowColor: #ececec;
+    --bgColor: #ffffff;
+    --borderColor: hsla(0, 0%, 0%, 0.16);
+    --drawerBg: #eeeeeeaa;
+  }
+
+  .darkTheme {
+    /* --brandColor: #1faeff; */
+    /* --brandColor: #1976d2; */
+    --brandColor: #0d6efd;
+    --headingColor: #f4f4f5;
+    --textColor: #9c9ca5;
+    --iconColor: #71717a;
+    --cardBgColor: #252529;
+    --shadowColor: #32323a;
+    --bgColor: #18181b;
+    --borderColor: hsla(0, 0%, 100%, 0.16);
+    --drawerBg: #111111aa;
+  }
+}
+::-webkit-scrollbar {
+  width: 10px;
+  background: var(--cardBgColor);
+}
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--iconColor);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--textColor);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans", sans-serif !important;
+}
+
+body {
+  background-color: var(--bgColor) !important;
+}
+
+.navLink {
+  text-decoration: none;
+  color: var(--headingColor);
+}
+.active,
+.btnHover:hover {
+  color: var(--brandColor);
+  transition: all 0.4s ease-in-out;
+}
+.card:hover {
+  background: var(--cardBgColor);
+  transition: all 0.3s ease-in-out;
+}
+.bg-blur,
+.MuiDrawer-paper {
+  backdrop-filter: blur(10px);
+  z-index: 10;
+}
+.drawer {
+  background: none !important;
+}
+button.active {
+  border-color: var(--brandColor) !important;
+  color: var(--headingColor) !important;
+}
