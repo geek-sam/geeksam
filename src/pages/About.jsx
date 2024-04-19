@@ -1,5 +1,5 @@
 import { Box, Button, Container, Grid, Typography } from "@mui/material";
-import profile from "../images/profile.jpg";
+import profile from "../../public/images/profile.jpg";
 import SocialLinks from "../components/SocialLinks";
 import EastIcon from "@mui/icons-material/East";
 import Experience from "../components/Experience";

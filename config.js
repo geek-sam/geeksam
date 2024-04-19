@@ -3,7 +3,7 @@ export const experience = [
     companyName: "Utkal Labs",
     jobRoll: "Associate Software Engineer",
     duration: "Jan 2023 - Present",
-    avatar: "/src/images/ul.png",
+    avatar: "/public/images/ul.png",
     description:
       "With one year of dedicated experience in frontend development and UI/UX design, I have successfully contributed to more than five UI design projects and three frontend development initiatives. My journey involves crafting visually captivating designs and implementing seamless, user-centric solutions, bringing a wealth of expertise to each project.",
   },
@@ -11,7 +11,7 @@ export const experience = [
     companyName: "Utkal Labs",
     jobRoll: "UI/UX Designer",
     duration: "Apr 2022 - Dec 2023",
-    avatar: "/src/images/ul.png",
+    avatar: "/public/images/ul.png",
     description:
       "As an intern in UI/UX design, I immersed myself in various design projects, cultivating a rich understanding of diverse styles. Each experience enhanced my skills, fostering creativity and adaptability.",
   },
@@ -27,7 +27,7 @@ export const experience = [
     companyName: "The Sparks Foundation",
     jobRoll: "Web Developer",
     duration: "Jul 2021 - Aug 2022",
-    avatar: "/src/images/tsf.jpg",
+    avatar: "/public/images/tsf.jpg",
     description:
       "As a freelance professional, I've navigated diverse projects, lending my expertise to multiple ventures. My contributions extend to impactful UI designs, ensuring a seamless blend of creativity and functionality in every endeavor.",
   },
@@ -37,7 +37,7 @@ export const educations = [
     courseName: "MCA",
     collegeName: "BPUT, Rourkela",
     duration: "2021 - 2023",
-    avatar: "/src/images/bput.png",
+    avatar: "/public/images/bput.png",
     description:
       "I recently completed my graduation from USBM, College which is affiliated with the Biju Patnaik University of Technology, Rourkela where I learned about multiple programming languages like C, C++, Java, JavaScript, and web technologies like HTML, CSS, Bootstrap, and React JS. ",
   },
@@ -45,7 +45,7 @@ export const educations = [
     courseName: "BCA",
     collegeName: "utkal University, Bhubaneswar",
     duration: "2018 - 2021",
-    avatar: "/src/images/utkalUniversity.jpg",
+    avatar: "/public/images/utkalUniversity.jpg",
     description:
       "I have successfully completed my graduation (BCA) from NC (Auto) College, Jajpur which is affiliated from Utkal University, Bhubaneswar. I learnt multiple technologies like C, C++, Java, C#, Data Structure and web technologies like HTML, CSS, Bootstrap.",
   },
@@ -53,7 +53,7 @@ export const educations = [
     courseName: "12th (Science)",
     collegeName: "MT Jr College, Jajpur",
     duration: "2016 - 2018",
-    avatar: "/src/images/utkalUniversity.jpg",
+    avatar: "/public/images/utkalUniversity.jpg",
     description:
       "I have completed my 12th with Science branch from Maa Tarini Mohavidyalaya Panikoili, Jajpur. I had subjects like Physics, Chemistry, Mathematics, and Information Technology ",
   },
@@ -64,41 +64,41 @@ export const works = [
     companyName: "Utkal Labs",
     jobRoll: "Ast. Software Engineer",
     duration: "Jan 2023 - Present",
-    avatar: "/src/images/ul.png",
+    avatar: "/public/images/ul.png",
   },
   {
     companyName: "Utkal Labs",
     jobRoll: "UI/UX Designer",
     duration: "Apr 2022 - Dec 2023",
-    avatar: "/src/images/ul.png",
+    avatar: "/public/images/ul.png",
   },
   {
     companyName: "Freelance",
     jobRoll: "UI Designer",
     duration: "Aug 2021 - Apr 2022",
-    avatar: "/src/images/free.jpg",
+    avatar: "/public/images/free.jpg",
   },
   {
     companyName: "The Sparks Foundation",
     jobRoll: "Web Developer",
     duration: "Aug 2021 - Apr 2022",
-    avatar: "/src/images/tsf.jpg",
+    avatar: "/public/images/tsf.jpg",
   },
 ];
 
 export const offerings = [
   {
-    icon: "/src/images/web.jpg",
+    icon: "/public/images/web.jpg",
     heading: "Web Developement",
     desc: " Experience your ideas come to life through our expertise and dedication to excellence.",
   },
   {
-    icon: "/src/images/uiux.jpg",
+    icon: "/public/images/uiux.jpg",
     heading: "UI/UX Design",
     desc: "Transform your ideas into reality by comprehensive UI/UX design solutions.",
   },
   {
-    icon: "/src/images/graphics.jpg",
+    icon: "/public/images/graphics.jpg",
     heading: "Graphic Design",
     desc: "Craft visually stunning and impactful designs that captivate, resonate and leave a lasting impact.",
   },
@@ -121,7 +121,7 @@ export const offerings = [
 
 export const projects = [
   {
-    banner: "/src/images/MarketingApp.png",
+    banner: "/public/images/MarketingApp.png",
     projectName: "Marketing Website",
     projectType: "static",
     description:
@@ -129,7 +129,7 @@ export const projects = [
     technologies: ["HTML", "CSS", "JavaScript", "Git", "GitHub Pages"],
   },
   {
-    banner: "/src/images/dcb_ss.png",
+    banner: "/public/images/dcb_ss.png",
     projectName: "DecaCodeBlitz",
     projectType: "reactApp",
     description:
@@ -137,7 +137,7 @@ export const projects = [
     technologies: ["ReactJs", "JavaScript", "MUI", "CSS", "API", "Git"],
   },
   {
-    banner: "/src/images/bharat-wealth.png",
+    banner: "/public/images/bharat-wealth.png",
     projectName: "Bharat Wealth",
     projectType: "static",
     description:
@@ -145,7 +145,7 @@ export const projects = [
     technologies: ["HTML", "CSS", "JavaScript", "Git", "GitHub Pages"],
   },
   {
-    banner: "/src/images/AdminPortal.png",
+    banner: "/public/images/AdminPortal.png",
     projectName: "Admin Website",
     projectType: "reactApp",
     description:
@@ -153,7 +153,7 @@ export const projects = [
     technologies: ["ReactJs", "JavaScript", "MUI", "CSS", "API", "Git"],
   },
   {
-    banner: "/src/images/CollabApp.png",
+    banner: "/public/images/CollabApp.png",
     projectName: "Collab App UI",
     projectType: "static",
     description:
@@ -161,7 +161,7 @@ export const projects = [
     technologies: ["Figma", "HTML", "JavaScript", "CSS", "Bootstrap", "Git"],
   },
   {
-    banner: "/src/images/todo.png",
+    banner: "/public/images/todo.png",
     projectName: "Todo App",
     projectType: "reactApp",
     description:
@@ -169,7 +169,7 @@ export const projects = [
     technologies: ["ReactJs", "Javascript", "CSS", "MUI", "Git", "Rest API"],
   },
   {
-    banner: "/src/images/chatui.jpg",
+    banner: "/public/images/chatui.jpg",
     projectName: "Chat App",
     projectType: "reactApp",
     description:
@@ -177,7 +177,7 @@ export const projects = [
     technologies: ["ReactJs", "Javascript", "CSS", "MUI", "API", "Git"],
   },
   {
-    banner: "/src/images/WeatherApp.png",
+    banner: "/public/images/WeatherApp.png",
     projectName: "Weather App",
     projectType: "reactApp",
     description:
@@ -185,7 +185,7 @@ export const projects = [
     technologies: ["ReactJs", "Javascript", "CSS", "MUI", "API", "Git"],
   },
   {
-    banner: "/src/images/StreamingApp.png",
+    banner: "/public/images/StreamingApp.png",
     projectName: "Video Streaming App",
     projectType: "uiDesign",
     description:
@@ -193,7 +193,7 @@ export const projects = [
     technologies: ["Figma", "Photoshop", "Illustator"],
   },
   {
-    banner: "/src/images/SurveyApp.png",
+    banner: "/public/images/SurveyApp.png",
     projectName: "On-field Survey App",
     projectType: "uiDesign",
     description:
@@ -201,7 +201,7 @@ export const projects = [
     technologies: ["Figma", "Photoshop"],
   },
   {
-    banner: "/src/images/DatingApp.png",
+    banner: "/public/images/DatingApp.png",
     projectName: "Dating App",
     projectType: "uiDesign",
     description:
