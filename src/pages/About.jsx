@@ -1,22 +1,25 @@
 import { Box, Button, Container, Grid, Typography } from "@mui/material";
-import profile from "../../public/images/profile.jpg";
+import profile from "/images/profile.jpg";
 import SocialLinks from "../components/SocialLinks";
 import EastIcon from "@mui/icons-material/East";
 import Experience from "../components/Experience";
 import { educations, experience } from "../../config";
 import Education from "../components/Education";
 import { useInView } from "react-intersection-observer";
+import { PopupModal } from "react-calendly";
+import { useState } from "react";
 
-const About = () => {
+const About = (props) => {
   const [ref, inView] = useInView({
     triggerOnce: true, // Only trigger once
     // threshold: 0.1, // Trigger when 50% of the element is visible
   });
+  const [isOpen, setIsOpen] = useState(false);
 
   return (
     <>
       <Container>
-        <Box sx={{ mt: 18, px: { xs: 3, sm: 8 } }}>
+        <Box sx={{ mt: { xs: 12, sm: 18 }, px: { xs: 3, sm: 8 } }}>
           <Grid
             container
             rowSpacing={1}
@@ -147,9 +150,19 @@ const About = () => {
                 } animate__delay-.5s`}
                 variant="contained"
                 sx={{ width: "200px", py: 1, mt: 8, textTransform: "none" }}
+                onClick={() => setIsOpen(true)}
               >
                 Let's Connect {<EastIcon sx={{ fontSize: "18px", ml: 1 }} />}
               </Button>
+              <PopupModal
+                url="https://calendly.com/geeksam"
+                pageSettings={props.pageSettings}
+                utm={props.utm}
+                prefill={props.prefill}
+                onModalClose={() => setIsOpen(false)}
+                open={isOpen}
+                rootElement={document.getElementById("root")}
+              />
             </Grid>
             <Grid
               item

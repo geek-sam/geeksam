@@ -15,6 +15,7 @@ import Typography from "@mui/material/Typography";
 import { Container, useScrollTrigger } from "@mui/material";
 import { DarkMode, LightMode } from "@mui/icons-material";
 import { NavLink } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const drawerWidth = 240;
 const navItems = [
@@ -63,6 +64,8 @@ const Header = (props) => {
   const handleDrawerToggle = () => {
     setMobileOpen((prevState) => !prevState);
   };
+
+  const navigate = useNavigate();
 
   const drawer = (
     <Box
@@ -132,7 +135,9 @@ const Header = (props) => {
                   display: { xs: "none", sm: "block" },
                   color: "var(--headingColor)",
                   fontSize: "var()",
+                  cursor: "pointer",
                 }}
+                onClick={() => navigate("/")}
               >
                 SAM
               </Typography>
@@ -163,6 +168,15 @@ const Header = (props) => {
                   </NavLink>
                 ))}
               </Box>
+              <Typography
+                variant="h6"
+                sx={{
+                  display: { xs: "block", sm: "none" },
+                }}
+                onClick={() => navigate("/")}
+              >
+                SAM
+              </Typography>
               <IconButton
                 disableRipple
                 aria-label="theme"

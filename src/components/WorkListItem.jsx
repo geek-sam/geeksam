@@ -18,7 +18,7 @@ const WorkListItem = (props) => {
             width: 40,
             height: 40,
             border: "4px solid var(--cardBgColor)",
-            bgcolor: "var(--cardBgColor)",
+            bgcolor: "var(--drawerBg)",
             fontSize: "14px",
             mr: 0,
           }}
@@ -37,17 +37,33 @@ const WorkListItem = (props) => {
           </Typography>
         }
         secondary={
-          <Typography
-            sx={{
-              fontSize: "var(--fontSize)",
-              color: "var(--textColor)",
+          <div
+            style={{
+              display: "flex",
+              justifyContent: "space-between",
+              flexWrap: "wrap",
             }}
           >
-            {jobRoll}
-          </Typography>
+            <Typography
+              sx={{
+                fontSize: "var(--fontSize)",
+                color: "var(--textColor)",
+              }}
+            >
+              {jobRoll}
+            </Typography>
+            <Typography
+              sx={{
+                fontSize: "var(--fontSize)",
+                color: "var(--textColor)",
+              }}
+            >
+              {duration}
+            </Typography>
+          </div>
         }
       />
-      <ListItemText
+      {/* <ListItemText
         secondary={
           <Typography
             sx={{
@@ -59,11 +75,11 @@ const WorkListItem = (props) => {
           </Typography>
         }
         sx={{
-          top: "32px",
+          top: "15px",
           position: "absolute",
           right: "10px",
         }}
-      />
+      /> */}
     </ListItem>
   );
 };

@@ -10,11 +10,12 @@
     --headingColor: #27272a;
     --textColor: #52525b;
     --iconColor: #71717a;
-    --cardBgColor: #fafafa;
+    --cardBgColor: #f5f5f5;
     --shadowColor: #ececec;
     --bgColor: #ffffff;
     --borderColor: hsla(0, 0%, 0%, 0.16);
     --drawerBg: #eeeeeeaa;
+    --techBg: #52aeff10;
   }
 
   .darkTheme {
@@ -29,6 +30,7 @@
     --bgColor: #18181b;
     --borderColor: hsla(0, 0%, 100%, 0.16);
     --drawerBg: #111111aa;
+    --techBg: #0088ff10;
   }
 }
 ::-webkit-scrollbar {

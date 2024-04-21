@@ -13,7 +13,7 @@ import avatar from "../../public/images/avatar.jpg";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import InstagramIcon from "@mui/icons-material/Instagram";
-import TwitterIcon from "@mui/icons-material/Twitter";
+import XIcon from "@mui/icons-material/X";
 import OfferingCard from "../components/OfferingCard";
 import MailOutlineIcon from "@mui/icons-material/MailOutline";
 import customTheme from "../components/InputTheme";
@@ -31,6 +31,16 @@ const Home = () => {
     triggerOnce: true, // Only trigger once
     threshold: 0.1, // Trigger when 50% of the element is visible
   });
+
+  const handleDownload = () => {
+    // Replace 'pdfFileName.pdf' with the name of your PDF file
+    const pdfUrl = `${window.location.origin}/assets/sam-cv.pdf`;
+    const anchor = document.createElement("a");
+    anchor.href = pdfUrl;
+    anchor.download = "sam-cv.pdf";
+
+    anchor.click();
+  };
   return (
     <Container>
       <Box sx={{ mt: 18, px: { xs: 3, sm: 8 } }}>
@@ -75,27 +85,36 @@ const Home = () => {
           className="animate__animated animate__fadeInUp animate__delay-.5s"
           sx={{ mt: 3 }}
         >
-          <LinkedInIcon
-            className="btnHover"
-            sx={{ mr: 3, cursor: "pointer", color: "var(--iconColor)" }}
-          />
-          <InstagramIcon
-            className="btnHover"
-            sx={{ mr: 3, cursor: "pointer", color: "var(--iconColor)" }}
-          />
-          <GitHubIcon
-            className="btnHover"
-            sx={{ mr: 3, cursor: "pointer", color: "var(--iconColor)" }}
-          />
-          <TwitterIcon
-            className="btnHover"
-            sx={{ mr: 3, cursor: "pointer", color: "var(--iconColor)" }}
-          />
+          <a href="https://www.linkedin.com/in/sambhav-sahoo" target="/">
+            <LinkedInIcon
+              className="btnHover"
+              sx={{ mr: 3, cursor: "pointer", color: "var(--iconColor)" }}
+            />
+          </a>
+          <a href="https://www.instagram.com/_sam_b_hav_" target="/">
+            <InstagramIcon
+              className="btnHover"
+              sx={{ mr: 3, cursor: "pointer", color: "var(--iconColor)" }}
+            />
+          </a>
+          <a href="https://github.com/geek-sam" target="/">
+            <GitHubIcon
+              className="btnHover"
+              sx={{ mr: 3, cursor: "pointer", color: "var(--iconColor)" }}
+            />
+          </a>
+          <a href="https://twitter.com/Im__Sam_" target="/">
+            <XIcon
+              className="btnHover"
+              sx={{ mr: 3, cursor: "pointer", color: "var(--iconColor)" }}
+            />
+          </a>
         </Box>
         <Button
           className="animate__animated animate__fadeInUp animate__delay-.5s"
           variant="contained"
           sx={{ width: "200px", py: 1, mt: 8, textTransform: "none" }}
+          onClick={handleDownload}
         >
           Downlaod CV {<SouthIcon sx={{ fontSize: "18px", ml: 1 }} />}
         </Button>
@@ -150,7 +169,7 @@ const Home = () => {
             <Grid item xs={12} sm={12} md={6} lg={6}>
               <Paper
                 ref={ref}
-                className={`card animate__animated ${
+                className={`animate__animated ${
                   inView ? "animate__fadeInUp" : ""
                 } animate__delay-.2s`}
                 elevation={0}
@@ -199,7 +218,7 @@ const Home = () => {
                 <Button
                   variant="contained"
                   sx={{
-                    pb: 1.2,
+                    pb: 1.1,
                     textTransform: "none",
                     bgcolor: "var(--iconColor)",
                     ml: 1,
@@ -212,7 +231,7 @@ const Home = () => {
               <Paper
                 elevation={0}
                 ref={ref}
-                className={`card animate__animated ${
+                className={`animate__animated ${
                   inView ? "animate__fadeInUp" : ""
                 } animate__delay-.5s`}
                 sx={{
@@ -264,6 +283,7 @@ const Home = () => {
                     fontSize: "var(--fontSize)",
                     fontWeight: 400,
                   }}
+                  onClick={handleDownload}
                 >
                   Download CV {<SouthIcon sx={{ fontSize: "18px", ml: 1 }} />}
                 </Button>

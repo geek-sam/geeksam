@@ -70,7 +70,7 @@ const ProjectCard = (props) => {
                 padding: "5px 18px",
                 // border: "2px solid var(--brandColor)",
                 color: "var(--brandColor)",
-                backgroundColor: "var(--cardBgColor)",
+                backgroundColor: "var(--techBg)",
                 borderRadius: "30px",
                 marginTop: "10px",
                 marginRight: "10px",

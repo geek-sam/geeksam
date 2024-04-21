@@ -9,7 +9,7 @@ import {
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import InstagramIcon from "@mui/icons-material/Instagram";
-import TwitterIcon from "@mui/icons-material/Twitter";
+import XIcon from "@mui/icons-material/X";
 import MailIcon from "@mui/icons-material/Mail";
 
 const SocialLinks = () => {
@@ -25,8 +25,13 @@ const SocialLinks = () => {
               >
                 Follow{" "}
                 <Link
-                  href="#"
-                  sx={{ textDecoration: "none", color: "var(--brandColor)" }}
+                  href="https://www.linkedin.com/in/sambhav-sahoo"
+                  target="_blank"
+                  sx={{
+                    textDecoration: "none",
+                    color: "var(--textColor)",
+                    "&:hover": { color: "var(--brandColor)" },
+                  }}
                 >
                   @sambhav-sahoo
                 </Link>
@@ -45,8 +50,13 @@ const SocialLinks = () => {
               >
                 Follow{" "}
                 <Link
-                  href="#"
-                  sx={{ textDecoration: "none", color: "var(--brandColor)" }}
+                  href="https://www.instagram.com/_sam_b_hav_"
+                  target="_blank"
+                  sx={{
+                    textDecoration: "none",
+                    color: "var(--textColor)",
+                    "&:hover": { color: "var(--brandColor)" },
+                  }}
                 >
                   @_sam_b_hav_
                 </Link>
@@ -65,8 +75,13 @@ const SocialLinks = () => {
               >
                 Follow{" "}
                 <Link
-                  href="#"
-                  sx={{ textDecoration: "none", color: "var(--brandColor)" }}
+                  href="https://github.com/geek-sam"
+                  target="_blank"
+                  sx={{
+                    textDecoration: "none",
+                    color: "var(--textColor)",
+                    "&:hover": { color: "var(--brandColor)" },
+                  }}
                 >
                   @geek-sam
                 </Link>
@@ -77,7 +92,7 @@ const SocialLinks = () => {
       </List>
       <List sx={{ mt: -2 }}>
         <ListItem>
-          <TwitterIcon sx={{ mr: 3, color: "var(--iconColor)" }} />
+          <XIcon sx={{ mr: 3, color: "var(--iconColor)" }} />
           <ListItemText
             primary={
               <Typography
@@ -85,8 +100,13 @@ const SocialLinks = () => {
               >
                 Follow{" "}
                 <Link
-                  href="#"
-                  sx={{ textDecoration: "none", color: "var(--brandColor)" }}
+                  href="https://twitter.com/Im__Sam_"
+                  target="_blank"
+                  sx={{
+                    textDecoration: "none",
+                    color: "var(--textColor)",
+                    "&:hover": { color: "var(--brandColor)" },
+                  }}
                 >
                   @Im__Sam_
                 </Link>
