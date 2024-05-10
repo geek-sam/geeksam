@@ -184,7 +184,7 @@ const About = (props) => {
             rowSpacing={1}
             columnSpacing={{ xs: 1, sm: 2, md: 3 }}
           >
-            <Grid item xs={12} lg={6}>
+            <Grid item xs={12} lg={12}>
               <Typography
                 variant="body1"
                 sx={{
@@ -214,8 +214,8 @@ const About = (props) => {
                 ))}
               </Box>
             </Grid>
-            <Grid item xs={12} lg={6}>
-              <Box sx={{ ml: { xs: 0, sm: 0, md: 0, lg: 10 } }}>
+            <Grid item xs={12} lg={12}>
+              <Box>
                 <Typography
                   variant="body1"
                   sx={{

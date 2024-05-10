@@ -22,7 +22,7 @@ const navItems = [
   {
     id: 1,
     path: "",
-    name: "Home",
+    name: "",
   },
   {
     id: 2,

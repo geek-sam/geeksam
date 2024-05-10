@@ -179,10 +179,10 @@
   dependencies:
     "@babel/helper-plugin-utils" "^7.22.5"
 
-"@babel/runtime@^7.12.5", "@babel/runtime@^7.18.3", "@babel/runtime@^7.23.6", "@babel/runtime@^7.5.5", "@babel/runtime@^7.8.7":
-  version "7.23.6"
-  resolved "https://registry.npmjs.org/@babel/runtime/-/runtime-7.23.6.tgz"
-  integrity sha512-zHd0eUrf5GZoOWVCXp6koAKQTfZV07eit6bGPmJgnZdnSAvvZee6zniW2XMF7Cmc4ISOOnPy3QaSiIJGJkVEDQ==
+"@babel/runtime@^7.12.5", "@babel/runtime@^7.18.3", "@babel/runtime@^7.23.6", "@babel/runtime@^7.24.4", "@babel/runtime@^7.5.5", "@babel/runtime@^7.8.7":
+  version "7.24.5"
+  resolved "https://registry.npmjs.org/@babel/runtime/-/runtime-7.24.5.tgz"
+  integrity sha512-Nms86NXrsaeU9vbBJKni6gXiEXZ4CVpYVzEjDH9Sb8vmZ3UljyA1GSOJl/6LGPO8EHLuSF9H+IxNXHPX8QHJ4g==
   dependencies:
     regenerator-runtime "^0.14.0"
 
@@ -376,7 +376,7 @@
   dependencies:
     "@floating-ui/utils" "^0.1.3"
 
-"@floating-ui/dom@^1.5.1":
+"@floating-ui/dom@^1.0.0":
   version "1.5.3"
   resolved "https://registry.npmjs.org/@floating-ui/dom/-/dom-1.5.3.tgz"
   integrity sha512-ClAbQnEqJAKCJOEbbLo5IUlZHkNszqhuxS4fHAVxRPXPya6Ysf2G8KypnYcOTpx6I8xcgF9bbHb6g/2KpbV8qA==
@@ -384,12 +384,12 @@
     "@floating-ui/core" "^1.4.2"
     "@floating-ui/utils" "^0.1.3"
 
-"@floating-ui/react-dom@^2.0.4":
-  version "2.0.4"
-  resolved "https://registry.npmjs.org/@floating-ui/react-dom/-/react-dom-2.0.4.tgz"
-  integrity sha512-CF8k2rgKeh/49UrnIBs4BdxPUV6vize/Db1d/YbCLyp9GiVZ0BEwf5AiDSxJRCr6yOkGqTFHtmrULxkEfYZ7dQ==
+"@floating-ui/react-dom@^2.0.4", "@floating-ui/react-dom@^2.0.8":
+  version "2.0.9"
+  resolved "https://registry.npmjs.org/@floating-ui/react-dom/-/react-dom-2.0.9.tgz"
+  integrity sha512-q0umO0+LQK4+p6aGyvzASqKbKOJcAHJ7ycE9CuUvfx3s9zTHWmGJTPOIlM/hmSBfUfg/XfY5YhLBLR/LHwShQQ==
   dependencies:
-    "@floating-ui/dom" "^1.5.1"
+    "@floating-ui/dom" "^1.0.0"
 
 "@floating-ui/utils@^0.1.3":
   version "0.1.6"
@@ -465,10 +465,28 @@
     clsx "^2.0.0"
     prop-types "^15.8.1"
 
+"@mui/base@5.0.0-beta.42":
+  version "5.0.0-beta.42"
+  resolved "https://registry.npmjs.org/@mui/base/-/base-5.0.0-beta.42.tgz"
+  integrity sha512-fWRiUJVCHCPF+mxd5drn08bY2qRw3jj5f1SSQdUXmaJ/yKpk23ys8MgLO2KGVTRtbks/+ctRfgffGPbXifj0Ug==
+  dependencies:
+    "@babel/runtime" "^7.24.4"
+    "@floating-ui/react-dom" "^2.0.8"
+    "@mui/types" "^7.2.14"
+    "@mui/utils" "^6.0.0-alpha.1"
+    "@popperjs/core" "^2.11.8"
+    clsx "^2.1.0"
+    prop-types "^15.8.1"
+
 "@mui/core-downloads-tracker@^5.15.2":
   version "5.15.2"
   resolved "https://registry.npmjs.org/@mui/core-downloads-tracker/-/core-downloads-tracker-5.15.2.tgz"
   integrity sha512-0vk4ckS2w1F5PmkSXSd7F/QuRlNcPqWTJ8CPl+HQRLTIhJVS/VKEI+3dQufOdKfn2wS+ecnvlvXerbugs+xZ8Q==
+
+"@mui/core-downloads-tracker@^6.0.0-alpha.3":
+  version "6.0.0-dev.240424162023-9968b4889d"
+  resolved "https://registry.npmjs.org/@mui/core-downloads-tracker/-/core-downloads-tracker-6.0.0-dev.240424162023-9968b4889d.tgz"
+  integrity sha512-doh3M3U7HUGSBIWGe1yvesSbfDguMRjP0N09ogWSBM2hovXAlgULhMgcRTepAZLLwfRxFII0bCohq6B9NqoKuw==
 
 "@mui/icons-material@^5.15.2":
   version "5.15.2"
@@ -476,6 +494,20 @@
   integrity sha512-Vs0Z6cd6ieTavMjqPvIJJfwsKaCLdRSErk5LjKdZlBqk7r2SR6roDyhVTQuZOeCzjEFj0qZ4iVPp2DJZRwuYbw==
   dependencies:
     "@babel/runtime" "^7.23.6"
+
+"@mui/joy@^5.0.0-beta.36":
+  version "5.0.0-beta.36"
+  resolved "https://registry.npmjs.org/@mui/joy/-/joy-5.0.0-beta.36.tgz"
+  integrity sha512-fFW8jqA/6JcnjjSUgiFJ17bbvMxwFU+daT5Ohpi1qYrDub0XYj1+8UYDUgGCLsv8XNe50AkbnqidtAlMpq7Glg==
+  dependencies:
+    "@babel/runtime" "^7.24.4"
+    "@mui/base" "5.0.0-beta.42"
+    "@mui/core-downloads-tracker" "^6.0.0-alpha.3"
+    "@mui/system" "^6.0.0-alpha.3"
+    "@mui/types" "^7.2.14"
+    "@mui/utils" "^6.0.0-alpha.3"
+    clsx "^2.1.0"
+    prop-types "^15.8.1"
 
 "@mui/material@^5.0.0", "@mui/material@^5.15.2":
   version "5.15.2"
@@ -504,6 +536,15 @@
     "@mui/utils" "^5.15.2"
     prop-types "^15.8.1"
 
+"@mui/private-theming@^6.0.0-alpha.3":
+  version "6.0.0-alpha.5"
+  resolved "https://registry.npmjs.org/@mui/private-theming/-/private-theming-6.0.0-alpha.5.tgz"
+  integrity sha512-jMo45tVNOA0t2GEIgOiroPHWkranirwNGdzElxjbNmNXhxniFHDISKzCvEljCEfU88syAwm9fi22CwmqwIbfag==
+  dependencies:
+    "@babel/runtime" "^7.24.4"
+    "@mui/utils" "^6.0.0-alpha.5"
+    prop-types "^15.8.1"
+
 "@mui/styled-engine@^5.15.2":
   version "5.15.2"
   resolved "https://registry.npmjs.org/@mui/styled-engine/-/styled-engine-5.15.2.tgz"
@@ -512,6 +553,16 @@
     "@babel/runtime" "^7.23.6"
     "@emotion/cache" "^11.11.0"
     csstype "^3.1.2"
+    prop-types "^15.8.1"
+
+"@mui/styled-engine@^6.0.0-alpha.3":
+  version "6.0.0-alpha.5"
+  resolved "https://registry.npmjs.org/@mui/styled-engine/-/styled-engine-6.0.0-alpha.5.tgz"
+  integrity sha512-M+nvgL6V9JAnJTy9WJLXXWKfe5YnkIpzheXszsvwi0Yoig/er1DcUwhd7fiKhrgSzEhB9eKXA93fdzFdf1+mcQ==
+  dependencies:
+    "@babel/runtime" "^7.24.4"
+    "@emotion/cache" "^11.11.0"
+    csstype "^3.1.3"
     prop-types "^15.8.1"
 
 "@mui/system@^5.15.2":
@@ -528,10 +579,24 @@
     csstype "^3.1.2"
     prop-types "^15.8.1"
 
-"@mui/types@^7.2.11":
-  version "7.2.11"
-  resolved "https://registry.npmjs.org/@mui/types/-/types-7.2.11.tgz"
-  integrity sha512-KWe/QTEsFFlFSH+qRYf3zoFEj3z67s+qAuSnMMg+gFwbxG7P96Hm6g300inQL1Wy///gSRb8juX7Wafvp93m3w==
+"@mui/system@^6.0.0-alpha.3":
+  version "6.0.0-dev.240424162023-9968b4889d"
+  resolved "https://registry.npmjs.org/@mui/system/-/system-6.0.0-dev.240424162023-9968b4889d.tgz"
+  integrity sha512-Y3yCFUHN1xMK62hJJBqzZb1YQvHNaHc7JUX01eU6QTPojtIbGMF2jCOP/EQw77/byahNbxeLoAIQx10F0IR3Rw==
+  dependencies:
+    "@babel/runtime" "^7.24.4"
+    "@mui/private-theming" "^6.0.0-alpha.3"
+    "@mui/styled-engine" "^6.0.0-alpha.3"
+    "@mui/types" "^7.2.14"
+    "@mui/utils" "^6.0.0-alpha.3"
+    clsx "^2.1.0"
+    csstype "^3.1.3"
+    prop-types "^15.8.1"
+
+"@mui/types@^7.2.11", "@mui/types@^7.2.14":
+  version "7.2.14"
+  resolved "https://registry.npmjs.org/@mui/types/-/types-7.2.14.tgz"
+  integrity sha512-MZsBZ4q4HfzBsywtXgM1Ksj6HDThtiwmOKUXH1pKYISI9gAVXCNHNpo7TlGoGrBaYWZTdNoirIN7JsQcQUjmQQ==
 
 "@mui/utils@^5.15.2":
   version "5.15.2"
@@ -540,6 +605,16 @@
   dependencies:
     "@babel/runtime" "^7.23.6"
     "@types/prop-types" "^15.7.11"
+    prop-types "^15.8.1"
+    react-is "^18.2.0"
+
+"@mui/utils@^6.0.0-alpha.1", "@mui/utils@^6.0.0-alpha.3", "@mui/utils@^6.0.0-alpha.5":
+  version "6.0.0-alpha.5"
+  resolved "https://registry.npmjs.org/@mui/utils/-/utils-6.0.0-alpha.5.tgz"
+  integrity sha512-E0MNO8pfIkxsF/Ql+W0J0t4uTgXsTjGHrKr3UhnyFRLqP+JFg5tCvGcSqL0bCDck60Kuc77JCYMr4wbJrhk3LA==
+  dependencies:
+    "@babel/runtime" "^7.24.4"
+    "@types/prop-types" "^15.7.12"
     prop-types "^15.8.1"
     react-is "^18.2.0"
 
@@ -622,10 +697,10 @@
   resolved "https://registry.npmjs.org/@types/parse-json/-/parse-json-4.0.2.tgz"
   integrity sha512-dISoDXWWQwUquiKsyZ4Ng+HX2KsPL7LyHKHQwgGFEA3IaKac4Obd+h2a/a6waisAoepJlBcx9paWqjA8/HVjCw==
 
-"@types/prop-types@*", "@types/prop-types@^15.7.11":
-  version "15.7.11"
-  resolved "https://registry.npmjs.org/@types/prop-types/-/prop-types-15.7.11.tgz"
-  integrity sha512-ga8y9v9uyeiLdpKddhxYQkxNDrfvuPrlFb0N1qnZZByvcElJaXthF1UhvCh9TLWJBEHeNtdnbysW7Y6Uq8CVng==
+"@types/prop-types@*", "@types/prop-types@^15.7.11", "@types/prop-types@^15.7.12":
+  version "15.7.12"
+  resolved "https://registry.npmjs.org/@types/prop-types/-/prop-types-15.7.12.tgz"
+  integrity sha512-5zvhXYtRNRluoE/jAp4GVsSduVUzNWKkOZrCDBWYtE7biZywwdC2AcEzg+cSMLFRfVgeAFqpfNabiPjxFddV1Q==
 
 "@types/react-dom@^18.2.17":
   version "18.2.18"
@@ -880,10 +955,10 @@ chalk@^4.0.0:
     ansi-styles "^4.1.0"
     supports-color "^7.1.0"
 
-clsx@^2.0.0:
-  version "2.0.0"
-  resolved "https://registry.npmjs.org/clsx/-/clsx-2.0.0.tgz"
-  integrity sha512-rQ1+kcj+ttHG0MKVGBUXwayCCF1oh39BF5COIpRzuCEv8Mwjv0XucrI2ExNTOn9IlLifGClWQcU9BrZORvtw6Q==
+clsx@^2.0.0, clsx@^2.1.0:
+  version "2.1.1"
+  resolved "https://registry.npmjs.org/clsx/-/clsx-2.1.1.tgz"
+  integrity sha512-eYm0QWBtUrBWZWG0d386OGAw16Z995PiOVo2B7bjWSbHedGl5e0ZWaq65kOGgUSNesEIDkB9ISbTg/JK9dhCZA==
 
 color-convert@^1.9.0:
   version "1.9.3"
@@ -954,7 +1029,7 @@ cross-spawn@^7.0.2:
     shebang-command "^2.0.0"
     which "^2.0.1"
 
-csstype@^3.0.2, csstype@^3.1.2:
+csstype@^3.0.2, csstype@^3.1.2, csstype@^3.1.3:
   version "3.1.3"
   resolved "https://registry.npmjs.org/csstype/-/csstype-3.1.3.tgz"
   integrity sha512-M1uQkMl8rQK/szD0LNhtqxIPLpimGm8sOBwU7lLnCpSbTyY3yeU1Vc7l4KT5zT4s/yOxHH5O7tIuuLOCnLADRw==
@@ -2185,9 +2260,9 @@ react-is@^16.13.1, react-is@^16.7.0:
   integrity sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==
 
 react-is@^18.2.0:
-  version "18.2.0"
-  resolved "https://registry.npmjs.org/react-is/-/react-is-18.2.0.tgz"
-  integrity sha512-xWGDIW6x921xtzPkhiULtthJHoJvBbF3q26fzloPCK0hsvxtPVelvftw3zjbHWSkR2km9Z+4uxbDDK/6Zw9B8w==
+  version "18.3.1"
+  resolved "https://registry.npmjs.org/react-is/-/react-is-18.3.1.tgz"
+  integrity sha512-/LLMVyas0ljjAtoYiPqYiL8VWXzUUdThrmU5+n20DZv+a+ClRoevUzw5JxU+Ieh5/c87ytoTBV9G1FiKfNJdmg==
 
 react-refresh@^0.14.0:
   version "0.14.0"

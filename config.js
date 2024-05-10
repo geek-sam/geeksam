@@ -39,15 +39,15 @@ export const educations = [
     duration: "2021 - 2023",
     avatar: "images/bput.png",
     description:
-      "I recently completed my graduation from USBM, College which is affiliated with the Biju Patnaik University of Technology, Rourkela where I learned about multiple programming languages like C, C++, Java, JavaScript, and web technologies like HTML, CSS, Bootstrap, and React JS. ",
+      "I recently completed my graduation from USBM, College which is affiliated to Biju Patnaik University of Technology, Rourkela where I learned about multiple programming languages like C, C++, Java, JavaScript, and web technologies like HTML, CSS, Bootstrap, and React JS. ",
   },
   {
     courseName: "BCA",
-    collegeName: "utkal University, Bhubaneswar",
+    collegeName: "Utkal University, Bhubaneswar",
     duration: "2018 - 2021",
     avatar: "images/utkalUniversity.jpg",
     description:
-      "I have successfully completed my graduation (BCA) from NC (Auto) College, Jajpur which is affiliated from Utkal University, Bhubaneswar. I learnt multiple technologies like C, C++, Java, C#, Data Structure and web technologies like HTML, CSS, Bootstrap.",
+      "I have successfully completed my graduation (BCA) from NC (Auto) College, Jajpur which is affiliated to Utkal University, Bhubaneswar. I learnt multiple technologies like C, C++, Java, C#, Data Structure and web technologies like HTML, CSS, Bootstrap.",
   },
   {
     courseName: "12th (Science)",

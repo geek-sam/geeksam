@@ -10,6 +10,7 @@ import Contact from "./pages/Contact";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import ScrollRestoration from "./components/ScrollRestoration";
+import ProjectDetails from "./pages/ProjectDetails";
 
 const App = () => {
   const [theme, setTheme] = useState("darkTheme");
@@ -30,6 +31,7 @@ const App = () => {
         <Route exact path="/" element={<Home />} />
         <Route exact path="/about" element={<About />} />
         <Route exact path="/projects" element={<Projects />} />
+        <Route exact path="/details" element={<ProjectDetails />} />
         <Route exact path="/blogs" element={<Blogs />} />
         <Route exact path="/contact" element={<Contact />} />
         <Route exact path="*" element={<h2>Hum pe toh hai hi ni?</h2>} />

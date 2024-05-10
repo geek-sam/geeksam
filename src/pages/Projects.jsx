@@ -6,8 +6,8 @@ import { useState } from "react";
 const Projects = () => {
   const style = {
     border: "2px solid var(--cardBgColor)",
-    padding: "8px 25px",
-    spacing: "5px",
+    padding: "5px 22px 6px 22px",
+    // spacing: "10px",
     borderRadius: "30px",
     background: "none",
     color: "var(--textColor)",

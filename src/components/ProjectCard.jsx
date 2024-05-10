@@ -25,36 +25,36 @@ const ProjectCard = (props) => {
   return (
     <Card
       ref={ref}
-      className={`card animate__animated ${
+      className={`animate__animated ${
         inView ? "animate__fadeInUp" : ""
       } animate__delay-.5s`}
-      // className="card animate__animated animate__fadeInUp"
       elevation={0}
       sx={{
-        maxWidth: 340,
+        width: 340,
         m: 2,
         bgcolor: "var(--bgColor)",
         color: "var(--headingColor)",
-        borderRadius: "8px",
-        border: "2px solid var(--cardBgColor)",
+        // borderRadius: "8px",
+        // border: "2px solid var(--cardBgColor)",
       }}
     >
-      <CardMedia
-        sx={{ height: 150, m: 1, borderRadius: "5px 5px 0 0 " }}
-        image={banner}
-        title="banner"
-      />
+      <CardMedia sx={{ height: 150, mx: 2 }} image={banner} title="banner" />
       <CardContent>
-        <Typography gutterBottom variant="h5" component="div">
+        <Typography
+          gutterBottom
+          variant="h2"
+          component="div"
+          sx={{ fontSize: "18px", fontWeight: 600 }}
+        >
           {projectName}
         </Typography>
-        <Typography
+        {/* <Typography
           variant="body2"
           color="var(--textColor)"
           sx={{ textAlign: "justify", mb: 1 }}
         >
-          {truncate(description, 150)}
-        </Typography>
+          {truncate(description, 100)}
+        </Typography> */}
         <Box
           sx={{
             display: "flex",
@@ -67,13 +67,14 @@ const ProjectCard = (props) => {
             <span
               key={index}
               style={{
-                padding: "5px 18px",
+                padding: "3px 12px",
                 // border: "2px solid var(--brandColor)",
                 color: "var(--brandColor)",
                 backgroundColor: "var(--techBg)",
                 borderRadius: "30px",
                 marginTop: "10px",
-                marginRight: "10px",
+                marginRight: "5px",
+                fontSize: "12px",
               }}
             >
               {data}
