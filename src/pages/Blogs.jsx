@@ -1,9 +1,11 @@
-import { Box, Container, Typography } from "@mui/material";
+import { Box, Container, Divider, Typography } from "@mui/material";
+import { blogs } from "../../config";
+import BlogCard from "../components/BlogCard";
 
 const Blogs = () => (
   <>
     <Container>
-      <Box sx={{ mt: 18, px: { xs: 3, sm: 8 }, height: "50vh" }}>
+      <Box sx={{ mt: 18, px: { xs: 3, sm: 8 } }}>
         <Typography
           variant="h1"
           sx={{
@@ -14,21 +16,38 @@ const Blogs = () => (
             maxWidth: "700px",
           }}
         >
-          Will implement soon!
+          Insights & Ideas
         </Typography>
         <Typography
           variant="body1"
           sx={{
-            fontSize: "var(--fontSize)",
+            fontSize: "var(--subHeadingSize)",
             fontWeight: 400,
             color: "var(--textColor)",
-            mt: 3,
+            mt: 1,
             lineHeight: "28px",
             maxWidth: "700px",
           }}
         >
-          Hey there we are working on this, and this will come to you very soon.
+          Explore my Latest Articles and Thoughts.
         </Typography>
+        <Divider sx={{ mt: 5, bgcolor: "var(--cardBgColor)" }} />
+        {!blogs ? (
+          "No blogs Found"
+        ) : (
+          <>
+            {blogs.map((data, index) => (
+              <BlogCard
+                key={index}
+                date={data.date}
+                blogType={data.blogType}
+                heading={data.heading}
+                subHeading={data.subHeading}
+                link={data.link}
+              />
+            ))}
+          </>
+        )}
       </Box>
     </Container>
   </>

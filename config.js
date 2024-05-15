@@ -32,6 +32,7 @@ export const experience = [
       "As a begiener in the field of web developement I have designed and developed multiple web pages also worked on the payment getway integration, developed a banking website using web technologies like HTML, CSS, JavaScript, PHP and Razorpay  ",
   },
 ];
+
 export const educations = [
   {
     courseName: "MCA",
@@ -207,5 +208,17 @@ export const projects = [
     description:
       "A dating app aims to a create a platform where anyone can connect with the people of their similar interest and also can chat with them.",
     technologies: ["Figma", "Photoshop", "Illustator"],
+  },
+];
+
+export const blogs = [
+  {
+    date: "May 11, 2024",
+    blogType: "UI/UX",
+    heading:
+      "The Unspoken Rules: Exploring UI/UX Laws Every Designer Should Know",
+    subHeading:
+      "In the dynamic realm of user interface (UI) and user experience (UX) design, certain fundamental principles serve as guiding lights and shaping the way designers create digital experiences.",
+    link: "https://medium.com/@sambhav18/the-unspoken-rules-exploring-ui-ux-laws-every-designer-should-know-8fa4439e7cdd",
   },
 ];

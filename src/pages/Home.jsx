@@ -57,11 +57,11 @@ const Home = () => {
             fontWeight: 700,
             color: "var(--headingColor)",
             mt: 4,
-            maxWidth: "700px",
+            maxWidth: "500px",
           }}
           className="animate__animated animate__fadeInDown animate__delay-.5s"
         >
-          Software developer and UI/UX designer.
+          Software developer & UI/UX designer.
         </Typography>
         <Typography
           className="animate__animated animate__fadeInUp animate__delay-.5s"

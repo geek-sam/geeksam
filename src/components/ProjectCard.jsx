@@ -48,13 +48,13 @@ const ProjectCard = (props) => {
         >
           {projectName}
         </Typography>
-        {/* <Typography
+        <Typography
           variant="body2"
           color="var(--textColor)"
           sx={{ textAlign: "justify", mb: 1 }}
         >
           {truncate(description, 100)}
-        </Typography> */}
+        </Typography>
         <Box
           sx={{
             display: "flex",
@@ -68,7 +68,6 @@ const ProjectCard = (props) => {
               key={index}
               style={{
                 padding: "3px 12px",
-                // border: "2px solid var(--brandColor)",
                 color: "var(--brandColor)",
                 backgroundColor: "var(--techBg)",
                 borderRadius: "30px",

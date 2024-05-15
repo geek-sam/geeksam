@@ -1,4 +1,4 @@
-import { Box, Container } from "@mui/material";
+import { Box, Container, Divider, Typography } from "@mui/material";
 import ProjectCard from "../components/ProjectCard";
 import { projects } from "../../config";
 import { useState } from "react";
@@ -29,12 +29,44 @@ const Projects = () => {
   return (
     <div>
       <Container>
+        <Box sx={{ mt: 15, px: { xs: 3, sm: 8 } }}>
+          <Typography
+            variant="h1"
+            sx={{
+              fontSize: "var(--heroSize)",
+              fontWeight: 700,
+              color: "var(--headingColor)",
+              mt: 4,
+              maxWidth: "700px",
+            }}
+          >
+            Things I have made
+          </Typography>
+          <Typography
+            variant="body1"
+            sx={{
+              fontSize: "var(--subHeadingSize)",
+              fontWeight: 400,
+              color: "var(--textColor)",
+              mt: 1,
+              lineHeight: "28px",
+              maxWidth: "700px",
+            }}
+          >
+            I’ve worked on a lots of small small projects over the years but
+            these are the ones that I’m most proud of.
+            {/* Many of them are open-source, so if you see something that grabs your interest, check
+            out the code and contribute if you have ideas for how it can be
+            improved. */}
+          </Typography>
+          {/* <Divider sx={{ mt: 5, bgcolor: "var(--cardBgColor)" }} /> */}
+        </Box>
         <Box
           sx={{
             display: "flex",
             flexDirection: "row",
             justifyContent: "center",
-            mt: 15,
+            mt: 5,
             gap: "15px",
           }}
         >
@@ -83,7 +115,7 @@ const Projects = () => {
             flexDirection: "row",
             flexWrap: "wrap",
             justifyContent: "center",
-            // px: { xs: 3, sm: 8 },
+            px: { xs: 3, sm: 2 },
           }}
         >
           {items.map((data, index) => (

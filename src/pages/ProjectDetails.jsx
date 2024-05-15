@@ -1,11 +1,4 @@
-import {
-  Box,
-  Container,
-  Paper,
-  Table,
-  TableContainer,
-  Typography,
-} from "@mui/material";
+import { Box, Container, Typography } from "@mui/material";
 import adminPortal from "/images/AdminPortal.png";
 
 function ProjectDetails() {
@@ -34,7 +27,6 @@ function ProjectDetails() {
             alt=""
             width="100%"
             style={{
-              //   transform: "rotate(3deg)",
               borderRadius: "5px",
               marginTop: "30px",
               borderImage: "linear-gradient(#0003, #000) 0 fill",
