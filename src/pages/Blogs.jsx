@@ -41,6 +41,7 @@ const Blogs = () => (
                 key={index}
                 date={data.date}
                 blogType={data.blogType}
+                isNew={data.isNew}
                 heading={data.heading}
                 subHeading={data.subHeading}
                 link={data.link}

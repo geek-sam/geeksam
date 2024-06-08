@@ -213,7 +213,17 @@ export const projects = [
 
 export const blogs = [
   {
+    date: "June 06, 2024",
+    isNew: true,
+    blogType: "UI/UX",
+    heading: "Different styles of Headings In Typography",
+    subHeading:
+      "Headings play a crucial role in typography by organizing content, enhancing readability, and guiding users through a document or web page. Without them, users are presented with giant blocks of text that can be hard to understand and digest. ",
+    link: "https://medium.com/@sambhav18/different-styles-of-headings-in-typography-a1aa4b3241dc",
+  },
+  {
     date: "May 11, 2024",
+    isNew: false,
     blogType: "UI/UX",
     heading:
       "The Unspoken Rules: Exploring UI/UX Laws Every Designer Should Know",
