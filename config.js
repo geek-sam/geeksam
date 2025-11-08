@@ -5,7 +5,7 @@ export const experience = [
     duration: "Jan 2023 - Present",
     avatar: "images/ul.png",
     description:
-      "With one year of dedicated experience in frontend development and UI/UX design, I have successfully contributed to more than five UI design projects and three frontend development initiatives. My journey involves crafting visually captivating designs and implementing seamless, user-centric solutions, bringing a wealth of expertise to each project.",
+      "With two years of dedicated experience in frontend development and UI/UX design, I have successfully contributed to more than five UI design projects and three frontend development initiatives. My journey involves crafting visually captivating designs and implementing seamless, user-centric solutions, bringing a wealth of expertise to each project.",
   },
   {
     companyName: "Utkal Labs",
@@ -70,7 +70,7 @@ export const works = [
   {
     companyName: "Utkal Labs",
     jobRoll: "UI/UX Designer",
-    duration: "Apr 22 - Dec 23",
+    duration: "Apr 22 - Dec 22",
     avatar: "images/ul.png",
   },
   {
@@ -82,7 +82,7 @@ export const works = [
   {
     companyName: "The Sparks Foundation",
     jobRoll: "Web Developer",
-    duration: "Aug 21 - Apr 22",
+    duration: "Jul 21 - Jul 21",
     avatar: "images/tsf.jpg",
   },
 ];
@@ -213,12 +213,45 @@ export const projects = [
 
 export const blogs = [
   {
-    date: "June 06, 2024",
+    date: "July 28, 2024",
     isNew: true,
+    blogType: "Git",
+    heading: "Best Practices for Git Branching",
+    subHeading:
+      "A structured branching strategy is essential for maintaining a clean, efficient, and collaborative Git workflow. Here are some best practices for branch structure and working with branches effectively:",
+    link: "https://medium.com/@sambhav18/best-practices-for-git-branching-0af90c1faf37",
+  },{
+    date: "July 28, 2024",
+    isNew: false,
+    blogType: "UI/UX",
+    heading: "Choose the Perfect Font for Your Logo",
+    subHeading:
+      "Choosing the perfect font for a logo is crucial because typography plays a significant role in conveying a brand’s identity, values, and tone. The right font can enhance a logo’s design, making it memorable,",
+    link: "https://medium.com/@sambhav18/choose-the-perfect-font-for-your-logo-33cbc9de05f3",
+  },{
+    date: "July 28, 2024",
+    isNew: false,
+    blogType: "React",
+    heading: "Absolute Imports In React",
+    subHeading:
+      "Using absolute imports in a React project simplifies import paths by avoiding long, complex relative paths like ../../../components/Button. Instead, you can import files directly from the root of the project ",
+    link: "https://medium.com/@sambhav18/absolute-imports-in-react-a834a2372a82",
+  },{
+    date: "July 28, 2024",
+    isNew: false,
+    blogType: "UI/UX",
+    heading: "Can AI replace the designers in the future?",
+    subHeading:
+      "Whether AI will substitute designers in the future is a complex and multilayered question, it asks for the exploration of the different sides of technology, creativity, and human skills.",
+    link: "https://medium.com/@sambhav18/can-ai-replace-the-designers-in-the-future-092179f9a1eb",
+  },
+  {
+    date: "June 06, 2024",
+    isNew: false,
     blogType: "UI/UX",
     heading: "Different styles of Headings In Typography",
     subHeading:
-      "Headings play a crucial role in typography by organizing content, enhancing readability, and guiding users through a document or web page. Without them, users are presented with giant blocks of text that can be hard to understand and digest. ",
+      "Headings play a crucial role in typography by organizing content, enhancing readability, and guiding users through a document or web page. Without them, users are presented with giant blocks of text that can be hard to understand and digest.",
     link: "https://medium.com/@sambhav18/different-styles-of-headings-in-typography-a1aa4b3241dc",
   },
   {

@@ -61,7 +61,7 @@ const Home = () => {
           }}
           className="animate__animated animate__fadeInDown animate__delay-.5s"
         >
-          Software developer & UI/UX designer.
+          Web developer & UI/UX designer.
         </Typography>
         <Typography
           className="animate__animated animate__fadeInUp animate__delay-.5s"
@@ -88,25 +88,25 @@ const Home = () => {
           <a href="https://www.linkedin.com/in/sambhav-sahoo" target="/">
             <LinkedInIcon
               className="btnHover"
-              sx={{ mr: 3, cursor: "pointer", color: "var(--iconColor)" }}
+              sx={{ mr: 3, cursor: "pointer", color: "var(--iconColor)", fontSize: "32px" }}
             />
           </a>
           <a href="https://www.instagram.com/_sam_b_hav_" target="/">
             <InstagramIcon
               className="btnHover"
-              sx={{ mr: 3, cursor: "pointer", color: "var(--iconColor)" }}
+              sx={{ mr: 3, cursor: "pointer", color: "var(--iconColor)", fontSize: "32px" }}
             />
           </a>
           <a href="https://github.com/geek-sam" target="/">
             <GitHubIcon
               className="btnHover"
-              sx={{ mr: 3, cursor: "pointer", color: "var(--iconColor)" }}
+              sx={{ mr: 3, cursor: "pointer", color: "var(--iconColor)", fontSize: "32px" }}
             />
           </a>
           <a href="https://twitter.com/Im__Sam_" target="/">
             <XIcon
               className="btnHover"
-              sx={{ mr: 3, cursor: "pointer", color: "var(--iconColor)" }}
+              sx={{ mr: 3, cursor: "pointer", color: "var(--iconColor)", fontSize: "32px" }}
             />
           </a>
         </Box>

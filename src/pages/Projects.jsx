@@ -1,4 +1,4 @@
-import { Box, Container, Divider, Typography } from "@mui/material";
+import { Box, Container, Typography } from "@mui/material";
 import ProjectCard from "../components/ProjectCard";
 import { projects } from "../../config";
 import { useState } from "react";
@@ -40,7 +40,7 @@ const Projects = () => {
               maxWidth: "700px",
             }}
           >
-            Things I have made
+            My works
           </Typography>
           <Typography
             variant="body1"
@@ -53,8 +53,10 @@ const Projects = () => {
               maxWidth: "700px",
             }}
           >
-            I’ve worked on a lots of small small projects over the years but
-            these are the ones that I’m most proud of.
+            Here are some of my most exciting projects—ranging from web
+            development to sleek UI designs. Each project reflects my passion
+            for building functional, scalable, and visually appealing digital
+            experiences.
             {/* Many of them are open-source, so if you see something that grabs your interest, check
             out the code and contribute if you have ideas for how it can be
             improved. */}
