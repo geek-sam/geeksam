@@ -1,3 +1,34 @@
+export const featureProjects = [
+  {
+    banner: "/images/MarketingApp.png",
+    projectName: "Marketing Website",
+    projectType: "static",
+    description:
+      "A website created for the advertising of an web video conferenceing tool presenting it's feature and why one should use this insted of others.",
+  },
+  {
+    banner: "/images/dcb_ss.png",
+    projectName: "DecaCodeBlitz",
+    projectType: "reactApp",
+    description:
+      "A website for a 10 days event named DecaCodeBlitz, which is used for user registration, get questions and the user result & rankings.",
+  },
+  {
+    banner: "/images/bharat-wealth.jpg",
+    projectName: "Bharat Wealth",
+    projectType: "static",
+    description:
+      "A website created for the leading financial services firm providing best in class investment solutions to our clients and being a platform of choice of talented staffs.",
+  },
+  {
+    banner: "/images/bharat-wealth.jpg",
+    projectName: "Bharat Wealth",
+    projectType: "static",
+    description:
+      "A website created for the leading financial services firm providing best in class investment solutions to our clients and being a platform of choice of talented staffs.",
+  },
+];
+
 export const experience = [
   {
     companyName: "Utkal Labs",
@@ -220,7 +251,8 @@ export const blogs = [
     subHeading:
       "A structured branching strategy is essential for maintaining a clean, efficient, and collaborative Git workflow. Here are some best practices for branch structure and working with branches effectively:",
     link: "https://medium.com/@sambhav18/best-practices-for-git-branching-0af90c1faf37",
-  },{
+  },
+  {
     date: "July 28, 2024",
     isNew: false,
     blogType: "UI/UX",
@@ -228,7 +260,8 @@ export const blogs = [
     subHeading:
       "Choosing the perfect font for a logo is crucial because typography plays a significant role in conveying a brand’s identity, values, and tone. The right font can enhance a logo’s design, making it memorable,",
     link: "https://medium.com/@sambhav18/choose-the-perfect-font-for-your-logo-33cbc9de05f3",
-  },{
+  },
+  {
     date: "July 28, 2024",
     isNew: false,
     blogType: "React",
@@ -236,7 +269,8 @@ export const blogs = [
     subHeading:
       "Using absolute imports in a React project simplifies import paths by avoiding long, complex relative paths like ../../../components/Button. Instead, you can import files directly from the root of the project ",
     link: "https://medium.com/@sambhav18/absolute-imports-in-react-a834a2372a82",
-  },{
+  },
+  {
     date: "July 28, 2024",
     isNew: false,
     blogType: "UI/UX",

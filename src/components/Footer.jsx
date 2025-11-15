@@ -1,6 +1,15 @@
 import { Box, Container, Divider, Link, Typography } from "@mui/material";
 import { useNavigate } from "react-router";
 import { NavLink } from "react-router-dom";
+import { HugeiconsIcon } from "@hugeicons/react";
+import {
+  Behance02Icon,
+  NewTwitterIcon,
+  DribbbleIcon,
+  Github01Icon,
+  InstagramIcon,
+  Linkedin01Icon,
+} from "@hugeicons/core-free-icons";
 
 const Footer = () => {
   const navigate = useNavigate();
@@ -24,6 +33,65 @@ const Footer = () => {
         }}
       >
         <Box
+            className="animate__animated animate__fadeInUp animate__delay-.5s"
+            sx={{ mt: 2, display: "flex", gap: 2 }}
+          >
+            <a href="https://www.linkedin.com/in/sambhav-sahoo" target="/">
+              <HugeiconsIcon
+                className="btnHover"
+                icon={Linkedin01Icon}
+                size={28}
+                color="var(--iconColor)"
+                strokeWidth={1.5}
+              />
+            </a>
+            <a href="https://twitter.com/Im__Sam_" target="/">
+              <HugeiconsIcon
+                className="btnHover"
+                icon={DribbbleIcon}
+                size={28}
+                color="var(--iconColor)"
+                strokeWidth={1.5}
+              />
+            </a>
+            <a href="https://twitter.com/Im__Sam_" target="/">
+              <HugeiconsIcon
+                className="btnHover"
+                icon={Behance02Icon}
+                size={28}
+                color="var(--iconColor)"
+                strokeWidth={1.5}
+              />
+            </a>
+            <a href="https://github.com/geek-sam" target="/">
+              <HugeiconsIcon
+                className="btnHover"
+                icon={Github01Icon}
+                size={28}
+                color="var(--iconColor)"
+                strokeWidth={1.5}
+              />
+            </a>
+            <a href="https://www.instagram.com/_sam_b_hav_" target="/">
+              <HugeiconsIcon
+                className="btnHover"
+                icon={InstagramIcon}
+                size={28}
+                color="var(--iconColor)"
+                strokeWidth={1.5}
+              />
+            </a>
+            <a href="https://twitter.com/Im__Sam_" target="/">
+              <HugeiconsIcon
+                className="btnHover"
+                icon={NewTwitterIcon}
+                size={28}
+                color="var(--iconColor)"
+                strokeWidth={1.5}
+              />
+            </a>
+          </Box>
+        {/* <Box
           sx={{
             mt: 2,
             display: "flex",
@@ -67,7 +135,7 @@ const Footer = () => {
           >
             Contact
           </NavLink>
-        </Box>
+        </Box> */}
         <Typography
           variant="body1"
           sx={{ color: "var(--textColor)", mt: 2, fontSize: "var(--fontSize)" }}

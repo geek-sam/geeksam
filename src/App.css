@@ -1,12 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
 :root {
-  --heroSize: 42px;
-  --headingSize: 20px;
+  --heroSize: 56px;
+  --headingSize: 32px;
   --subHeadingSize: 16px;
   --fontSize: 14px;
 
   .lightTheme {
-    /* --brandColor: #1faeff; */
     --brandColor: #0d6efd;
     --headingColor: #27272a;
     --textColor: #52525b;
@@ -20,15 +19,13 @@
   }
 
   .darkTheme {
-    /* --brandColor: #1faeff; */
-    /* --brandColor: #1976d2; */
     --brandColor: #0d6efd;
     --headingColor: #f4f4f5;
     --textColor: #9c9ca5;
     --iconColor: #71717a;
     --cardBgColor: #252529;
     --shadowColor: #32323a;
-    --bgColor: #18181b;
+    --bgColor: #090909;
     --borderColor: hsla(0, 0%, 100%, 0.16);
     --drawerBg: #111111aa;
     --techBg: #0088ff10;
@@ -58,6 +55,7 @@
 body {
   background-color: var(--bgColor) !important;
 }
+ 
 
 .navLink {
   text-decoration: none;
@@ -83,4 +81,63 @@ body {
 button.active {
   border-color: var(--brandColor) !important;
   color: var(--headingColor) !important;
+}
+
+.buttonPrimary {
+  color: #fff;
+  background-image: linear-gradient(0deg, #0240dd 0%, #0d6efd 100%)!important;
+  border-radius: 8px !important;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.07),
+    0 4px 8px rgba(0, 0, 0, 0.07), 0 8px 16px rgba(0, 0, 0, 0.07),
+    0 16px 32px rgba(0, 0, 0, 0.07), 0 32px 64px rgba(0, 0, 0, 0.07),
+    inset 0 1px 0 0px rgba(255, 255, 255, 0.15) !important;
+  transition: all 300ms ease-in-out !important;
+}
+
+.buttonPrimary:hover, .buttonSecondary:hover {
+  filter: brightness(0.8);
+}
+
+.buttonPrimary:active,
+.buttonSecondary:active {
+  transform: scale(0.95);
+}
+
+.buttonSecondary{
+  color: var(--headingColor)!important;
+  background: var(--cardBgColor) !important;
+  border: 1px solid var(--cardBgColor) !important;
+  border-radius: 8px !important;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.07),
+    0 4px 8px rgba(0, 0, 0, 0.07), 0 8px 16px rgba(0, 0, 0, 0.07),
+    0 16px 32px rgba(0, 0, 0, 0.07), 0 32px 64px rgba(0, 0, 0, 0.07),
+    inset 0 1px 0 0px rgba(255, 255, 255, 0.15) !important;
+  transition: all 300ms ease-in-out !important;
+}
+
+.buttonSecondary:hover {
+  background: var(--cardBgColor) !important;
+}
+
+.dot-grid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.dot-grid__wrap {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.dot-grid__canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
 }

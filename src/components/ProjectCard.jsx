@@ -30,15 +30,15 @@ const ProjectCard = (props) => {
       } animate__delay-.5s`}
       elevation={0}
       sx={{
-        width: 340,
-        m: 2,
+        // width: 340,
+        // m: 2,
         bgcolor: "var(--bgColor)",
         color: "var(--headingColor)",
-        // borderRadius: "8px",
-        // border: "2px solid var(--cardBgColor)",
+        borderRadius: "8px",
+        border: "2px solid var(--cardBgColor)",
       }}
     >
-      <CardMedia sx={{ height: 150, mx: 2 }} image={banner} title="banner" />
+      <CardMedia sx={{ height: 250 }} image={banner} title="banner" />
       <CardContent>
         <Typography
           gutterBottom
@@ -51,11 +51,11 @@ const ProjectCard = (props) => {
         <Typography
           variant="body2"
           color="var(--textColor)"
-          sx={{ textAlign: "justify", mb: 1 }}
+          sx={{ textAlign: "left", mb: 1 }}
         >
-          {truncate(description, 100)}
+          {truncate(description, 120)}
         </Typography>
-        <Box
+        {/* <Box
           sx={{
             display: "flex",
             flexDirection: "row",
@@ -79,7 +79,7 @@ const ProjectCard = (props) => {
               {data}
             </span>
           ))}
-        </Box>
+        </Box> */}
       </CardContent>
       {/* <CardActions>
         <Button size="small">Learn More</Button>
