@@ -1,10 +1,10 @@
 import { Box, Grid, Typography } from "@mui/material";
-import ProjectCard from "./ProjectCard";
-import { useState } from "react";
-import { featureProjects } from "../../config";
+// import { useState } from "react";
+import { featureProjects } from "../../../config";
+import FeatureProjectCard from "./FeatureProjectCard";
 
 function FeaturingProjects() {
-  const [items, setItems] = useState(featureProjects);
+  // const [items, setItems] = useState(featureProjects);
   return (
     <div>
       <Box sx={{ py: 4 }}>
@@ -22,7 +22,7 @@ function FeaturingProjects() {
           }}
           className="animate__animated animate__fadeInDown animate__delay-.5s"
         >
-          Featuring Projects
+          Featured Projects
         </Typography>
         <Typography
           variant="body1"
@@ -40,16 +40,17 @@ function FeaturingProjects() {
           Here are some of my favorite projects that highlight my approach to
           solving real-world problems through design and development.
         </Typography>
-        <Grid container spacing={2} sx={{ mt: 3 }}>
-          {items.map((data, index) => (
-            <Grid item xs={12} sm={12} md={6} lg={6} key={index}>
-              <ProjectCard
+        <Grid container spacing={4} sx={{ mt: 3 }}>
+          {featureProjects.map((data, index) => (
+            <Grid item xs={12} sm={12} md={6} lg={4} key={index}>
+              <FeatureProjectCard
                 banner={data.banner}
                 projectName={data.projectName}
                 description={data.description}
+                projectType={data.projectType}
               />
             </Grid>
-          ))}
+           ))}
         </Grid>
       </Box>
     </div>

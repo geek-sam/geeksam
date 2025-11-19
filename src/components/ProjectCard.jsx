@@ -1,5 +1,4 @@
 import {
-  Box,
   // Button,
   Card,
   // CardActions,
@@ -11,11 +10,11 @@ import { useInView } from "react-intersection-observer";
 // import React, { useRef } from "react";
 
 const ProjectCard = (props) => {
-  const { projectName, description, banner, technologies } = props;
+  const { projectName, description, banner } = props;
 
-  function truncate(str, maxlength) {
-    return str.length > maxlength ? str.slice(0, maxlength - 1) + "…" : str;
-  }
+  // function truncate(str, maxlength) {
+  //   return str.length > maxlength ? str.slice(0, maxlength - 1) + "…" : str;
+  // }
 
   const [ref, inView] = useInView({
     triggerOnce: true, // Only trigger once
@@ -30,8 +29,7 @@ const ProjectCard = (props) => {
       } animate__delay-.5s`}
       elevation={0}
       sx={{
-        // width: 340,
-        // m: 2,
+        maxWidth: 600,
         bgcolor: "var(--bgColor)",
         color: "var(--headingColor)",
         borderRadius: "8px",
@@ -53,7 +51,7 @@ const ProjectCard = (props) => {
           color="var(--textColor)"
           sx={{ textAlign: "left", mb: 1 }}
         >
-          {truncate(description, 120)}
+          {/* {truncate(description, 120)} */} {description}
         </Typography>
         {/* <Box
           sx={{

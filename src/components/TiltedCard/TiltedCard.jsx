@@ -76,7 +76,7 @@ export default function TiltedCard({
   return (
     <figure
       ref={ref}
-      className="tilted-card-figure"
+      className="tilted-card-figure animate__animated animate__fadeInDown animate__delay-.5s"
       style={{
         height: containerHeight,
         width: containerWidth

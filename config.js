@@ -1,31 +1,45 @@
 export const featureProjects = [
   {
-    banner: "/images/MarketingApp.png",
-    projectName: "Marketing Website",
-    projectType: "static",
-    description:
-      "A website created for the advertising of an web video conferenceing tool presenting it's feature and why one should use this insted of others.",
+    banner: "/images/bharat-wealth.jpg",
+    projectName: "VixaNetwork",
+    projectType: "UI/UX",
+    description: "Smart Professional Networking Platform",
   },
   {
     banner: "/images/dcb_ss.png",
-    projectName: "DecaCodeBlitz",
-    projectType: "reactApp",
-    description:
-      "A website for a 10 days event named DecaCodeBlitz, which is used for user registration, get questions and the user result & rankings.",
+    projectName: "KreditSaathi",
+    projectType: "UI/UX & React",
+    description: "AI powered MSME loan & Instant Credit Application",
   },
   {
-    banner: "/images/bharat-wealth.jpg",
-    projectName: "Bharat Wealth",
-    projectType: "static",
-    description:
-      "A website created for the leading financial services firm providing best in class investment solutions to our clients and being a platform of choice of talented staffs.",
+    banner: "/images/MarketingApp.png",
+    projectName: "HireXpert",
+    projectType: "UI/UX",
+    description: "A dynamic platform to Hire and Get hired.",
+  },
+];
+
+export const servicesData = [
+  {
+    iconName: "WebDesign01Icon",
+    serviceName: "Landing Page",
+    serviceDesc:
+      "Crafting responsive, high-performance websites using modern technologies with clean and scalable code.",
   },
   {
-    banner: "/images/bharat-wealth.jpg",
-    projectName: "Bharat Wealth",
-    projectType: "static",
-    description:
-      "A website created for the leading financial services firm providing best in class investment solutions to our clients and being a platform of choice of talented staffs.",
+    iconName: "FigmaIcon",
+    serviceName: "UI/UX Design",
+    serviceDesc: "Designing intuitive, user-first interfaces that merge aesthetics with seamless functionality.",
+  },
+  {
+    iconName: "PenTool03Icon",
+    serviceName: "Logo Design",
+    serviceDesc: "Creating distinctive logos that capture your brand’s identity and make a lasting impression.",
+  },
+  {
+    iconName: "BrushIcon",
+    serviceName: "Graphic Design",
+    serviceDesc: "Designing engaging visuals for web, social, and print to tell your story with impact.",
   },
 ];
 

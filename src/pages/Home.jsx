@@ -12,24 +12,24 @@ import {
 } from "@mui/material";
 import DotGrid from "../components/DotGrid/DotGrid";
 // import heroImage from "/images/heroImage.jpg";
-import avatar from "../../public/images/avatar.jpg";
-import { useTheme } from "@mui/material/styles";
+import avatar from "/images/avatar.jpg";
+// import { useTheme } from "@mui/material/styles";
 import WorkOutlineIcon from "@mui/icons-material/WorkOutline";
 import FileDownloadOutlinedIcon from "@mui/icons-material/FileDownloadOutlined";
-import { useInView } from "react-intersection-observer";
+// import { useInView } from "react-intersection-observer";
 import NorthEastIcon from "@mui/icons-material/NorthEast";
 import TiltedCard from "../components/TiltedCard/TiltedCard";
-import WhatIDo from "../components/WhatIDo";
-import FeaturingProjects from "../components/FeaturingProjects";
+// import WhatIDo from "../components/WhatIDo";
+import FeaturingProjects from "../components/FeaturingProject/FeaturingProjects";
+import ServiceSection from "../components/ServiceSection/ServiceSection";
 
 const Home = ({ theme }) => {
-  const [ref, inView] = useInView({
-    triggerOnce: true, // Only trigger once
-    threshold: 0.1, // Trigger when 50% of the element is visible
-  });
+  // const [ref, inView] = useInView({
+  //   triggerOnce: true, // Only trigger once
+  //   threshold: 0.1, // Trigger when 50% of the element is visible
+  // });
 
   const handleDownload = () => {
-    // Replace 'pdfFileName.pdf' with the name of your PDF file
     const pdfUrl = `${window.location.origin}/assets/sam-cv.pdf`;
     const anchor = document.createElement("a");
     anchor.href = pdfUrl;
@@ -74,16 +74,6 @@ const Home = ({ theme }) => {
               sx={{ width: 72, height: 72, bgcolor: "var(--brandColor)" }}
               className="animate__animated animate__fadeInDown animate__delay-.5s"
             /> */}
-            {/* <img
-              src={avatar}
-              alt=""
-              width="120px"
-              style={{
-                // transform: "rotate(3deg)",
-                borderRadius: "20px",
-                border: "4px solid var(--borderColor)",
-              }}
-            /> */}
 
             <TiltedCard
               imageSrc={avatar}
@@ -112,6 +102,7 @@ const Home = ({ theme }) => {
                 mt: 3,
                 px: 1,
               }}
+              className="animate__animated animate__fadeInDown animate__delay-.5s"
             />
 
             <Typography
@@ -161,6 +152,7 @@ const Home = ({ theme }) => {
                   mt: 5,
                   textTransform: "none",
                   backgroundColor: "var(--brandColor)",
+                  borderRadius: "8px",
                 }}
                 onClick={handleDownload}
               >
@@ -176,6 +168,7 @@ const Home = ({ theme }) => {
                   mt: 5,
                   textTransform: "none",
                   backgroundColor: "var(--brandColor)",
+                  borderRadius: "8px",
                 }}
                 // onClick={handleDownload}
               >
@@ -185,8 +178,11 @@ const Home = ({ theme }) => {
           </Box>
 
           {/* <WhatIDo/> */}
-
+          {/* Featuring Projects Section */}
           <FeaturingProjects />
+
+          {/* Services Section */}
+          <ServiceSection />
         </Box>
       </Container>
     </>
