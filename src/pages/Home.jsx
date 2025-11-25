@@ -1,20 +1,13 @@
 import {
-  // Avatar,
   Box,
   Button,
-  Chip,
   Container,
-  Grid,
-  List,
-  Paper,
-  TextField,
   Typography,
 } from "@mui/material";
 import DotGrid from "../components/DotGrid/DotGrid";
-// import heroImage from "/images/heroImage.jpg";
 import avatar from "/images/avatar.jpg";
-// import { useTheme } from "@mui/material/styles";
 import WorkOutlineIcon from "@mui/icons-material/WorkOutline";
+// import { useTheme } from "@mui/material/styles";
 import FileDownloadOutlinedIcon from "@mui/icons-material/FileDownloadOutlined";
 // import { useInView } from "react-intersection-observer";
 import NorthEastIcon from "@mui/icons-material/NorthEast";
@@ -22,6 +15,9 @@ import TiltedCard from "../components/TiltedCard/TiltedCard";
 // import WhatIDo from "../components/WhatIDo";
 import FeaturingProjects from "../components/FeaturingProject/FeaturingProjects";
 import ServiceSection from "../components/ServiceSection/ServiceSection";
+import TestimonialSection from "../components/Testimonials/TestimonialSection";
+import CTASection from "../components/CTASection";
+import Capsul from "../components/Capsul";
 
 const Home = ({ theme }) => {
   // const [ref, inView] = useInView({
@@ -68,13 +64,6 @@ const Home = ({ theme }) => {
               position: "relative",
             }}
           >
-            {/* <Avatar
-              alt="Sam"
-              src={avatar}
-              sx={{ width: 72, height: 72, bgcolor: "var(--brandColor)" }}
-              className="animate__animated animate__fadeInDown animate__delay-.5s"
-            /> */}
-
             <TiltedCard
               imageSrc={avatar}
               altText="Kendrick Lamar - GNX Album Cover"
@@ -91,19 +80,11 @@ const Home = ({ theme }) => {
               overlayContent={<p className="tilted-card-demo-text"> </p>}
             />
 
-            <Chip
+            <Capsul 
               icon={<WorkOutlineIcon sx={{ fontSize: 16 }} />}
               label="3+ years of Digital Wins"
-              sx={{
-                position: "relative",
-                color: "var(--textColor)",
-                fontSize: "var(--fontSize)",
-                bgcolor: "var(--cardBgColor)",
-                mt: 3,
-                px: 1,
-              }}
-              className="animate__animated animate__fadeInDown animate__delay-.5s"
-            />
+              sx={{mt: 3,}}
+            />  
 
             <Typography
               variant="h1"
@@ -137,9 +118,9 @@ const Home = ({ theme }) => {
               {/* From wireframes to front-end, I turn ideas into intuitive,
               high-performing web experiences. */}
               {/* Every detail matters, from the first sketch to the final line of code. */}
-              I’m Sam - a UI/UX designer and frontend developer who loves
+              {`I'm Sam - a UI/UX designer and frontend developer who loves
               crafting digital products that make life easier and experiences
-              more enjoyable.
+              more enjoyable.`}
             </Typography>
 
             <Box sx={{ display: "flex", flexDirection: "row", gap: 2 }}>
@@ -183,6 +164,11 @@ const Home = ({ theme }) => {
 
           {/* Services Section */}
           <ServiceSection />
+
+          {/* Testimonials */}
+          <TestimonialSection />
+
+          <CTASection />
         </Box>
       </Container>
     </>

@@ -43,10 +43,10 @@ function ServiceSection() {
             }}
             className="animate__animated animate__fadeInDown animate__delay-.5s"
           >
-            <span style={{ color: "var(--iconColor)" }}>Services that</span>
+            <span style={{ color: "var(--iconColor)" }}>Perfect Fit</span>
             <br />
-            supercharge your <br />
-            business.
+            For Your Design and <br />
+            Innovation.
           </Typography>
           <Typography
             variant="body1"
@@ -81,6 +81,7 @@ function ServiceSection() {
                 alt={src.name}
                 title={src.name}
                 className="animate__animated animate__fadeInDown animate__delay-.5s"
+                style={{boxShadow: "0px 5px 15px rgba(85, 123, 226, 0.22)", borderRadius: "8px"}}
               />
             ))}
           </Box>

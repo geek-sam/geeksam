@@ -42,7 +42,7 @@ function FeaturingProjects() {
         </Typography>
         <Grid container spacing={4} sx={{ mt: 3 }}>
           {featureProjects.map((data, index) => (
-            <Grid item xs={12} sm={12} md={6} lg={4} key={index}>
+            <Grid item xs={12} sm={12} md={12} lg={4} key={index}>
               <FeatureProjectCard
                 banner={data.banner}
                 projectName={data.projectName}

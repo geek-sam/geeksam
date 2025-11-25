@@ -62,10 +62,11 @@ export default function FeatureProjectCard(props) {
           right: 20,
           color: "white",
           display: "flex",
-          alignItems:"flex-end"
+          alignItems:"flex-end",
+          justifyContent: "space-between",
         }}
       >
-        <Box>
+        <Box sx={{ maxWidth: "70%" }}>
           <Typography
             variant="h5"
             sx={{
@@ -81,7 +82,7 @@ export default function FeatureProjectCard(props) {
               fontSize: 14,
               lineHeight: 1.4,
               opacity: 0.9,
-              maxWidth: "90%",
+              // maxWidth: "90%",
             }}
           >
             {description}
