@@ -77,7 +77,7 @@ function ServiceSection() {
               {imageList.map((src, index) => (
                 <img
                   key={index}
-                  src={`../../../public/images/Logos/${src.url}`}
+                  src={`images/Logos/${src.url}`}
                   height={56}
                   alt={src.name}
                   title={src.name}
