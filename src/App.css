@@ -14,9 +14,10 @@
     --cardBgColor: #f5f5f5;
     --shadowColor: #ececec;
     --bgColor: #ffffff;
-    --borderColor: hsla(0, 0%, 0%, 0.16);
+    --borderColor: rgba(0, 0, 0, 0.07);
     --drawerBg: #eeeeeeaa;
     --techBg: #52aeff10;
+    --borderHighlight:  linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgb(46, 128, 252) 50%, rgba(255, 255, 255, 0) 100%);
   }
 
   .darkTheme {
@@ -24,12 +25,13 @@
     --headingColor: #f4f4f5;
     --textColor: #9c9ca5;
     --iconColor: #71717a;
-    --cardBgColor: #252529;
+    --cardBgColor: #141414;
     --shadowColor: #32323a;
     --bgColor: #090909;
-    --borderColor: hsla(0, 0%, 100%, 0.16);
+    --borderColor: rgba(255, 255, 255, 0.07);
     --drawerBg: #111111aa;
     --techBg: #0088ff10;
+    --borderHighlight:  linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgb(13, 110, 253) 50%, rgba(255, 255, 255, 0) 100%);
   }
 }
 ::-webkit-scrollbar {
@@ -46,11 +48,14 @@
   background: var(--textColor);
 }
 
+
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Inter", sans-serif !important;
+  background: rgba(0, 0, 0, 0) 0%, rgb(13, 110, 253) 50%, rgba(0, 85, 255, 0) 100%
 }
 
 body {

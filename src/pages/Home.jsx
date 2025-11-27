@@ -18,6 +18,8 @@ import ServiceSection from "../components/ServiceSection/ServiceSection";
 import TestimonialSection from "../components/Testimonials/TestimonialSection";
 import CTASection from "../components/CTASection";
 import Capsul from "../components/Capsul";
+import Gallery3D from "../components/Gallery3D/Gallery3D";
+import AboutSection from "../components/AboutSection/AboutSection";
 
 const Home = ({ theme }) => {
   // const [ref, inView] = useInView({
@@ -48,7 +50,6 @@ const Home = ({ theme }) => {
           returnDuration={2}
         />
       </div>
-      <Container sx={{ position: "relative" }}>
         <Box>
           {/* Hero Section */}
           <Box
@@ -165,12 +166,15 @@ const Home = ({ theme }) => {
           {/* Services Section */}
           <ServiceSection />
 
+          <AboutSection />
           {/* Testimonials */}
           <TestimonialSection />
 
+          {/* <Gallery3D/> */}
+
+
           <CTASection />
         </Box>
-      </Container>
     </>
   );
 };

@@ -1,4 +1,4 @@
-import { Box, Grid, Typography } from "@mui/material";
+import { Box, Container, Grid, Typography } from "@mui/material";
 // import { useState } from "react";
 import { featureProjects } from "../../../config";
 import FeatureProjectCard from "./FeatureProjectCard";
@@ -6,7 +6,7 @@ import FeatureProjectCard from "./FeatureProjectCard";
 function FeaturingProjects() {
   // const [items, setItems] = useState(featureProjects);
   return (
-    <div>
+      <Container sx={{ position: "relative" }}>
       <Box sx={{ py: 4 }}>
         {/* Featuring Projects Section */}
         <Typography
@@ -22,7 +22,7 @@ function FeaturingProjects() {
           }}
           className="animate__animated animate__fadeInDown animate__delay-.5s"
         >
-          Featured Projects
+          Featured Works
         </Typography>
         <Typography
           variant="body1"
@@ -53,7 +53,7 @@ function FeaturingProjects() {
            ))}
         </Grid>
       </Box>
-    </div>
+      </Container>
   );
 }
 

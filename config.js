@@ -313,3 +313,42 @@ export const blogs = [
     link: "https://medium.com/@sambhav18/the-unspoken-rules-exploring-ui-ux-laws-every-designer-should-know-8fa4439e7cdd",
   },
 ];
+
+export const testimonials = [
+  {
+    name: "Chandni Menda",
+    role: "Co-Founder, FOXO",
+    text: "This service exceeded my expectations. The UI design and attention to detail were exceptional!",
+    avatar: "https://i.pravatar.cc/100?img=5",
+  },
+  {
+    name: "Sangram Pani",
+    role: "Design Lead, VITA Network",
+    text: "Delivered fast, clean, and scalable code. Definitely working with you again!",
+    avatar: "https://i.pravatar.cc/100?img=1",
+  },
+  {
+    name: "Mukti Prasad ",
+    role: "CEO, Cluenuts",
+    text: "Professional, creative, and communicative throughout the whole project. Highly recommended!",
+    avatar: "https://i.pravatar.cc/100?img=8",
+  },
+  {
+    name: "Chandni Menda",
+    role: "Co-Founder, FOXO",
+    text: "This service exceeded my expectations. The UI design and attention to detail were exceptional!",
+    avatar: "https://i.pravatar.cc/100?img=5",
+  },
+  {
+    name: "Sangram Pani",
+    role: "Design Lead, VITA Network",
+    text: "Delivered fast, clean, and scalable code. Definitely working with you again!",
+    avatar: "https://i.pravatar.cc/100?img=1",
+  },
+  {
+    name: "Mukti Prasad ",
+    role: "CEO, Cluenuts",
+    text: "Professional, creative, and communicative throughout the whole project. Highly recommended!",
+    avatar: "https://i.pravatar.cc/100?img=8",
+  },
+]
