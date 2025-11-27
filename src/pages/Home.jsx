@@ -1,39 +1,33 @@
 import {
-  Avatar,
   Box,
   Button,
   Container,
-  Grid,
-  List,
-  Paper,
-  TextField,
   Typography,
 } from "@mui/material";
-import avatar from "../../public/images/avatar.jpg";
-import GitHubIcon from "@mui/icons-material/GitHub";
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import InstagramIcon from "@mui/icons-material/Instagram";
-import XIcon from "@mui/icons-material/X";
-import OfferingCard from "../components/OfferingCard";
-import MailOutlineIcon from "@mui/icons-material/MailOutline";
-import customTheme from "../components/InputTheme";
-import { ThemeProvider, useTheme } from "@mui/material/styles";
+import DotGrid from "../components/DotGrid/DotGrid";
+import avatar from "/images/avatar.jpg";
 import WorkOutlineIcon from "@mui/icons-material/WorkOutline";
-import WorkListItem from "../components/WorkListItem";
-import SouthIcon from "@mui/icons-material/South";
-import { works, offerings } from "../../config";
-import { useInView } from "react-intersection-observer";
+// import { useTheme } from "@mui/material/styles";
+import FileDownloadOutlinedIcon from "@mui/icons-material/FileDownloadOutlined";
+// import { useInView } from "react-intersection-observer";
+import NorthEastIcon from "@mui/icons-material/NorthEast";
+import TiltedCard from "../components/TiltedCard/TiltedCard";
+// import WhatIDo from "../components/WhatIDo";
+import FeaturingProjects from "../components/FeaturingProject/FeaturingProjects";
+import ServiceSection from "../components/ServiceSection/ServiceSection";
+import TestimonialSection from "../components/Testimonials/TestimonialSection";
+import CTASection from "../components/CTASection";
+import Capsul from "../components/Capsul";
+import Gallery3D from "../components/Gallery3D/Gallery3D";
+import AboutSection from "../components/AboutSection/AboutSection";
 
-const Home = () => {
-  const outerTheme = useTheme();
-
-  const [ref, inView] = useInView({
-    triggerOnce: true, // Only trigger once
-    threshold: 0.1, // Trigger when 50% of the element is visible
-  });
+const Home = ({ theme }) => {
+  // const [ref, inView] = useInView({
+  //   triggerOnce: true, // Only trigger once
+  //   threshold: 0.1, // Trigger when 50% of the element is visible
+  // });
 
   const handleDownload = () => {
-    // Replace 'pdfFileName.pdf' with the name of your PDF file
     const pdfUrl = `${window.location.origin}/assets/sam-cv.pdf`;
     const anchor = document.createElement("a");
     anchor.href = pdfUrl;
@@ -42,257 +36,146 @@ const Home = () => {
     anchor.click();
   };
   return (
-    <Container>
-      <Box sx={{ mt: 18, px: { xs: 3, sm: 8 } }}>
-        <Avatar
-          alt="Sam"
-          src={avatar}
-          sx={{ width: 72, height: 72, bgcolor: "var(--brandColor)" }}
-          className="animate__animated animate__fadeInDown animate__delay-.5s"
+    <>
+      <div style={{ width: "100%", height: "100vh", position: "absolute" }}>
+        <DotGrid
+          dotSize={2}
+          gap={14}
+          baseColor={theme === "darkTheme" ? "#090909" : "#ffffff"}
+          activeColor="#0d6efd"
+          proximity={150}
+          shockRadius={250}
+          shockStrength={5}
+          resistance={650}
+          returnDuration={2}
         />
-        <Typography
-          variant="h1"
-          sx={{
-            fontSize: "var(--heroSize)",
-            fontWeight: 700,
-            color: "var(--headingColor)",
-            mt: 4,
-            maxWidth: "500px",
-          }}
-          className="animate__animated animate__fadeInDown animate__delay-.5s"
-        >
-          Web developer & UI/UX designer.
-        </Typography>
-        <Typography
-          className="animate__animated animate__fadeInUp animate__delay-.5s"
-          variant="body1"
-          sx={{
-            fontSize: "var(--fontSize)",
-            fontWeight: 400,
-            color: "var(--textColor)",
-            mt: 3,
-            lineHeight: "28px",
-            maxWidth: "700px",
-          }}
-        >
-          I’m Sam, a passionate Frontend Developer and UI/UX Designer with HTML,
-          CSS, JavaScript, Bootstrap, and ReactJS expertise. Proficient in UI/UX
-          design using Figma, and Adobe tools like Photoshop, Illustrator, and
-          XD. Aiming to create visually stunning and functionally efficient web
-          solutions prioritizing user experience.
-        </Typography>
-        <Box
-          className="animate__animated animate__fadeInUp animate__delay-.5s"
-          sx={{ mt: 3 }}
-        >
-          <a href="https://www.linkedin.com/in/sambhav-sahoo" target="/">
-            <LinkedInIcon
-              className="btnHover"
-              sx={{ mr: 3, cursor: "pointer", color: "var(--iconColor)", fontSize: "32px" }}
-            />
-          </a>
-          <a href="https://www.instagram.com/_sam_b_hav_" target="/">
-            <InstagramIcon
-              className="btnHover"
-              sx={{ mr: 3, cursor: "pointer", color: "var(--iconColor)", fontSize: "32px" }}
-            />
-          </a>
-          <a href="https://github.com/geek-sam" target="/">
-            <GitHubIcon
-              className="btnHover"
-              sx={{ mr: 3, cursor: "pointer", color: "var(--iconColor)", fontSize: "32px" }}
-            />
-          </a>
-          <a href="https://twitter.com/Im__Sam_" target="/">
-            <XIcon
-              className="btnHover"
-              sx={{ mr: 3, cursor: "pointer", color: "var(--iconColor)", fontSize: "32px" }}
-            />
-          </a>
-        </Box>
-        <Button
-          className="animate__animated animate__fadeInUp animate__delay-.5s"
-          variant="contained"
-          sx={{ width: "200px", py: 1, mt: 8, textTransform: "none" }}
-          onClick={handleDownload}
-        >
-          Downlaod CV {<SouthIcon sx={{ fontSize: "18px", ml: 1 }} />}
-        </Button>
-        <Box sx={{ mt: 14 }}>
-          <Grid
-            container
-            rowSpacing={1}
-            columnSpacing={{ xs: 1, sm: 2, md: 3 }}
+      </div>
+        <Box>
+          {/* Hero Section */}
+          <Box
+            classmane="heroSection"
             sx={{
-              mt: 4,
+              mt: 18,
+              px: { xs: 3, sm: 8 },
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "center",
+              height: "90vh",
+              py: { xs: 3, sm: 12 },
+              position: "relative",
             }}
           >
-            <Grid item xs={12} sm={12} md={6} lg={6}>
-              <Typography
-                variant="h4"
-                sx={{
-                  fontSize: "var(--headingSize)",
-                  fontWeight: 600,
-                  color: "var(--headingColor)",
-                  mt: 3,
-                  lineHeight: "38px",
-                  m: "auto",
-                  maxWidth: "600px",
-                }}
-              >
-                What I Do
-              </Typography>
-              <Typography
-                variant="h4"
-                sx={{
-                  fontSize: "var(--fontSize)",
-                  fontWeight: 400,
-                  color: "var(--textColor)",
-                  mt: 3,
-                  lineHeight: "38px",
-                  m: "auto",
-                  mb: 2,
-                  maxWidth: "600px",
-                }}
-              >
-                I elevate projects with innovative solutions in
-              </Typography>
-              {offerings.map((data, index) => (
-                <OfferingCard
-                  key={index}
-                  icon={data.icon}
-                  heading={data.heading}
-                  desc={data.desc}
-                />
-              ))}
-            </Grid>
-            <Grid item xs={12} sm={12} md={6} lg={6}>
-              <Paper
-                ref={ref}
-                className={`animate__animated ${
-                  inView ? "animate__fadeInUp" : ""
-                } animate__delay-.2s`}
-                elevation={0}
-                sx={{
-                  border: "2px solid var(--cardBgColor)",
-                  background: "none",
-                  p: 3,
-                  mt: { xs: 3, sm: 3, md: 1, lg: 12 },
-                  ml: { xs: 0, sm: 1, md: 1, lg: 5 },
-                  borderRadius: "10px",
-                }}
-              >
-                <Typography
-                  sx={{
-                    fontWeight: 500,
-                    color: "var(--headingColor)",
-                    alignItems: "center",
-                    display: "flex",
-                  }}
-                >
-                  <MailOutlineIcon sx={{ mr: 3, color: "var(--iconColor)" }} />
-                  Stay up to date...
-                </Typography>
-                <Typography
-                  sx={{
-                    color: "var(--textColor)",
-                    mt: 2,
-                    fontSize: "var(--fontSize)",
-                  }}
-                >
-                  Get notified when I publish new blogs, and unsubscribe at any
-                  time.
-                </Typography>
-                <ThemeProvider theme={customTheme(outerTheme)}>
-                  <TextField
-                    size="small"
-                    placeholder="Email address"
-                    type="email"
-                    variant="outlined"
-                    sx={{
-                      width: { xs: "70%", sm: "80%", md: "70%", lg: "80%" },
-                      mt: 2,
-                    }}
-                  />
-                </ThemeProvider>
-                <Button
-                  variant="contained"
-                  sx={{
-                    pb: 1.1,
-                    textTransform: "none",
-                    bgcolor: "var(--iconColor)",
-                    ml: 1,
-                    mt: 2,
-                  }}
-                >
-                  Join
-                </Button>
-              </Paper>
-              <Paper
-                elevation={0}
-                ref={ref}
-                className={`animate__animated ${
-                  inView ? "animate__fadeInUp" : ""
-                } animate__delay-.5s`}
-                sx={{
-                  border: "2px solid var(--cardBgColor)",
-                  background: "none",
-                  p: 3,
-                  mt: 5,
-                  ml: { xs: 0, sm: 1, md: 1, lg: 5 },
-                  borderRadius: "10px",
-                }}
-              >
-                <Typography
-                  sx={{
-                    fontWeight: 500,
-                    color: "var(--headingColor)",
-                    alignItems: "center",
-                    display: "flex",
-                  }}
-                >
-                  <WorkOutlineIcon sx={{ mr: 3, color: "var(--iconColor)" }} />
-                  Work
-                </Typography>
-                <List
-                  sx={{
-                    width: "100%",
-                  }}
-                >
-                  {works.map((data, index) => (
-                    <WorkListItem
-                      key={index}
-                      companyName={data.companyName}
-                      jobRoll={data.jobRoll}
-                      duration={data.duration}
-                      avatar={data.avatar}
-                    />
-                  ))}
-                </List>
+            <TiltedCard
+              imageSrc={avatar}
+              altText="Kendrick Lamar - GNX Album Cover"
+              captionText="I'm Sam"
+              containerHeight="140px"
+              containerWidth="120px"
+              imageHeight="140px"
+              imageWidth="120px"
+              rotateAmplitude={12}
+              scaleOnHover={1.2}
+              showMobileWarning={true}
+              showTooltip={true}
+              displayOverlayContent={true}
+              overlayContent={<p className="tilted-card-demo-text"> </p>}
+            />
 
-                <Button
-                  variant="outlined"
-                  sx={{
-                    textTransform: "none",
-                    bgcolor: "var(--cardBgColor)",
-                    m: "auto",
-                    mt: 2,
-                    width: "100%",
-                    color: "var(--headingColor)",
-                    borderColor: "var(--cardBgColor)",
-                    fontSize: "var(--fontSize)",
-                    fontWeight: 400,
-                  }}
-                  onClick={handleDownload}
-                >
-                  Download CV {<SouthIcon sx={{ fontSize: "18px", ml: 1 }} />}
-                </Button>
-              </Paper>
-            </Grid>
-          </Grid>
+            <Capsul 
+              icon={<WorkOutlineIcon sx={{ fontSize: 16 }} />}
+              label="3+ years of Digital Wins"
+              sx={{mt: 3,}}
+            />  
+
+            <Typography
+              variant="h1"
+              sx={{
+                fontSize: "var(--heroSize)",
+                fontWeight: 700,
+                color: "var(--headingColor)",
+                mt: 4,
+                maxWidth: "700px",
+                lineHeight: "68px",
+                textAlign: "center",
+              }}
+              className="animate__animated animate__fadeInDown animate__delay-.5s"
+            >
+              Designing Experiences. Building Interfaces.
+              {/* Design with purpose & build with passion. */}
+            </Typography>
+            <Typography
+              className="animate__animated animate__fadeInUp animate__delay-.5s"
+              variant="body1"
+              sx={{
+                fontSize: "var(--subHeadingSize)",
+                fontWeight: 400,
+                color: "var(--textColor)",
+                mt: 3,
+                lineHeight: "24px",
+                maxWidth: "600px",
+                textAlign: "center",
+              }}
+            >
+              {/* From wireframes to front-end, I turn ideas into intuitive,
+              high-performing web experiences. */}
+              {/* Every detail matters, from the first sketch to the final line of code. */}
+              {`I'm Sam - a UI/UX designer and frontend developer who loves
+              crafting digital products that make life easier and experiences
+              more enjoyable.`}
+            </Typography>
+
+            <Box sx={{ display: "flex", flexDirection: "row", gap: 2 }}>
+              <Button
+                className="animate__animated animate__fadeInUp animate__delay-.5s buttonPrimary"
+                variant="contained"
+                sx={{
+                  minWidth: "150px",
+                  py: 1,
+                  mt: 5,
+                  textTransform: "none",
+                  backgroundColor: "var(--brandColor)",
+                  borderRadius: "8px",
+                }}
+                onClick={handleDownload}
+              >
+                My Resume{" "}
+                {<FileDownloadOutlinedIcon sx={{ fontSize: "18px", ml: 1 }} />}
+              </Button>
+              <Button
+                className="animate__animated animate__fadeInUp animate__delay-.5s buttonSecondary"
+                variant="contained"
+                sx={{
+                  minWidth: "150px",
+                  py: 1,
+                  mt: 5,
+                  textTransform: "none",
+                  backgroundColor: "var(--brandColor)",
+                  borderRadius: "8px",
+                }}
+                // onClick={handleDownload}
+              >
+                About Me {<NorthEastIcon sx={{ fontSize: "18px", ml: 1 }} />}
+              </Button>
+            </Box>
+          </Box>
+
+          {/* <WhatIDo/> */}
+          {/* Featuring Projects Section */}
+          <FeaturingProjects />
+
+          {/* Services Section */}
+          <ServiceSection />
+
+          <AboutSection />
+          {/* Testimonials */}
+          <TestimonialSection />
+
+          {/* <Gallery3D/> */}
+
+
+          <CTASection />
         </Box>
-      </Box>
-    </Container>
+    </>
   );
 };
 

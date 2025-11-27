@@ -1,3 +1,48 @@
+export const featureProjects = [
+  {
+    banner: "/images/bharat-wealth.jpg",
+    projectName: "VixaNetwork",
+    projectType: "UI/UX",
+    description: "Smart Professional Networking Platform",
+  },
+  {
+    banner: "/images/dcb_ss.png",
+    projectName: "KreditSaathi",
+    projectType: "UI/UX & React",
+    description: "AI powered MSME loan & Instant Credit Application",
+  },
+  {
+    banner: "/images/MarketingApp.png",
+    projectName: "HireXpert",
+    projectType: "UI/UX",
+    description: "A dynamic platform to Hire and Get hired.",
+  },
+];
+
+export const servicesData = [
+  {
+    iconName: "WebDesign01Icon",
+    serviceName: "Landing Page",
+    serviceDesc:
+      "Crafting responsive, high-performance websites using modern technologies with clean and scalable code.",
+  },
+  {
+    iconName: "FigmaIcon",
+    serviceName: "UI/UX Design",
+    serviceDesc: "Designing intuitive, user-first interfaces that merge aesthetics with seamless functionality.",
+  },
+  {
+    iconName: "PenTool03Icon",
+    serviceName: "Logo Design",
+    serviceDesc: "Creating distinctive logos that capture your brand’s identity and make a lasting impression.",
+  },
+  {
+    iconName: "BrushIcon",
+    serviceName: "Graphic Design",
+    serviceDesc: "Designing engaging visuals for web, social, and print to tell your story with impact.",
+  },
+];
+
 export const experience = [
   {
     companyName: "Utkal Labs",
@@ -220,7 +265,8 @@ export const blogs = [
     subHeading:
       "A structured branching strategy is essential for maintaining a clean, efficient, and collaborative Git workflow. Here are some best practices for branch structure and working with branches effectively:",
     link: "https://medium.com/@sambhav18/best-practices-for-git-branching-0af90c1faf37",
-  },{
+  },
+  {
     date: "July 28, 2024",
     isNew: false,
     blogType: "UI/UX",
@@ -228,7 +274,8 @@ export const blogs = [
     subHeading:
       "Choosing the perfect font for a logo is crucial because typography plays a significant role in conveying a brand’s identity, values, and tone. The right font can enhance a logo’s design, making it memorable,",
     link: "https://medium.com/@sambhav18/choose-the-perfect-font-for-your-logo-33cbc9de05f3",
-  },{
+  },
+  {
     date: "July 28, 2024",
     isNew: false,
     blogType: "React",
@@ -236,7 +283,8 @@ export const blogs = [
     subHeading:
       "Using absolute imports in a React project simplifies import paths by avoiding long, complex relative paths like ../../../components/Button. Instead, you can import files directly from the root of the project ",
     link: "https://medium.com/@sambhav18/absolute-imports-in-react-a834a2372a82",
-  },{
+  },
+  {
     date: "July 28, 2024",
     isNew: false,
     blogType: "UI/UX",
@@ -265,3 +313,42 @@ export const blogs = [
     link: "https://medium.com/@sambhav18/the-unspoken-rules-exploring-ui-ux-laws-every-designer-should-know-8fa4439e7cdd",
   },
 ];
+
+export const testimonials = [
+  {
+    name: "Chandni Menda",
+    role: "Co-Founder, FOXO",
+    text: "This service exceeded my expectations. The UI design and attention to detail were exceptional!",
+    avatar: "https://i.pravatar.cc/100?img=5",
+  },
+  {
+    name: "Sangram Pani",
+    role: "Design Lead, VITA Network",
+    text: "Delivered fast, clean, and scalable code. Definitely working with you again!",
+    avatar: "https://i.pravatar.cc/100?img=1",
+  },
+  {
+    name: "Mukti Prasad ",
+    role: "CEO, Cluenuts",
+    text: "Professional, creative, and communicative throughout the whole project. Highly recommended!",
+    avatar: "https://i.pravatar.cc/100?img=8",
+  },
+  {
+    name: "Chandni Menda",
+    role: "Co-Founder, FOXO",
+    text: "This service exceeded my expectations. The UI design and attention to detail were exceptional!",
+    avatar: "https://i.pravatar.cc/100?img=5",
+  },
+  {
+    name: "Sangram Pani",
+    role: "Design Lead, VITA Network",
+    text: "Delivered fast, clean, and scalable code. Definitely working with you again!",
+    avatar: "https://i.pravatar.cc/100?img=1",
+  },
+  {
+    name: "Mukti Prasad ",
+    role: "CEO, Cluenuts",
+    text: "Professional, creative, and communicative throughout the whole project. Highly recommended!",
+    avatar: "https://i.pravatar.cc/100?img=8",
+  },
+]

@@ -177,6 +177,7 @@ const Header = (props) => {
               >
                 SAM
               </Typography>
+
               <IconButton
                 disableRipple
                 aria-label="theme"
