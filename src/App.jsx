@@ -11,7 +11,6 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import ScrollRestoration from "./components/ScrollRestoration";
 import ProjectDetails from "./pages/ProjectDetails";
-// import ParticlesBackground from "./components/ParticlesBackground";
 
 const App = () => {
   const [theme, setTheme] = useState("darkTheme");
@@ -27,7 +26,6 @@ const App = () => {
   return (
     <Router>
       <ScrollRestoration />
-      {/* <ParticlesBackground theme={theme} /> */}
       <Header theme={theme} setTheme={setTheme} toggleTheme={toggleTheme} />
       <Routes>
         <Route exact path="/" element={<Home theme={theme} />} />

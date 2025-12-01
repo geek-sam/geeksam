@@ -1,33 +1,44 @@
 import { Box, Button, Container, Grid, Typography } from "@mui/material";
 import AboutImg1 from "../../../public/images/AboutImg1.png";
 import AboutImg2 from "../../../public/images/AboutImg2.png";
+// import DotGrid from ".././DotGrid/DotGrid";
+const grainTexture = `url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E")`;
 
-const polaroidBaseStyles = {
-  boxShadow: "0 8px 20px rgba(0,0,0,0.15)",
-  transition: "all 0.4s ease",
-  cursor: "pointer",
-
-  "&:hover": {
-    transform: "translateY(-8px) rotate(0deg) !important",
-    boxShadow: "0 12px 32px rgba(0,0,0,0.25)",
-  },
-};
 
 function AboutSection() {
   return (
     <Container sx={{ position: "relative" }}>
       <Box
+        className="noise-animate"
         sx={{
-        position:"relative",
+          position: "relative",
           border: "1px solid var(--borderColor)",
           width: "95%",
           mx: "auto",
-          my: 12,
+          my: 8,
           py: 8,
           px: 4,
           borderRadius: "24px",
         }}
       >
+        <Box
+          sx={{
+            position: "absolute",
+            inset: 0,
+            backgroundImage:
+              "linear-gradient(210deg, #0d6efd01 0%, #0d6efd07 50%, #0d6efd15 100%)",
+              borderRadius:"24px"
+          }}
+        />
+        <Box
+          sx={{
+            position: "absolute",
+            inset: 0,
+            backgroundImage: grainTexture,
+            opacity: 0.4,
+            mixBlendMode: "overlay",
+          }}
+        />
         <Box
           sx={{
             position: "absolute",

@@ -1,12 +1,8 @@
 import { Box, Container, Grid, Typography } from "@mui/material";
 import ServiceList from "./ServiceList";
 import { servicesData } from "../../../config";
-// const images = import.meta.glob("/public/images/Logos/*.{png,jpg,jpeg,svg}", {
-//   eager: true,
-// });
 
 function ServiceSection() {
-  // const imageList = Object.values(images).map((img) => img.default);
   const imageList = [
     { name: "Figma", url: "Figma.png" },
     { name: "Photoshop", url: "Photoshop.png" },
@@ -28,8 +24,7 @@ function ServiceSection() {
   return (
     <Container sx={{ position: "relative" }}>
       <Box sx={{ py: 4 }}>
-        {/* Featuring Projects Section */}
-
+        
         <Grid container spacing={12} sx={{ mt: 3 }}>
           <Grid item xs={12} sm={12} md={6} lg={6}>
             <Typography

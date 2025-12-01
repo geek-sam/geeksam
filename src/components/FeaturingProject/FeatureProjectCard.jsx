@@ -20,7 +20,7 @@ export default function FeatureProjectCard(props) {
       sx={{
         width: "100%",
         height: 420,
-        borderRadius: "16px",
+        // borderRadius: "16px",
         overflow: "hidden",
         position: "relative",
         // border: "2px solid var(--cardBgColor)",

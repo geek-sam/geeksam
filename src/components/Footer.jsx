@@ -16,23 +16,35 @@ const Footer = () => {
   return (
     <Container>
       <Divider sx={{ bgcolor: "var(--cardBgColor)", mt: 10 }} />
-      <Box
-        className="footer"
-        sx={{
-          mx: { xs: 4, lg: 8 },
-          mt: 4,
-          mb: 7,
-          display: "flex",
-          flexWrap: "wrap",
-          justifyContent: {
-            sm: "space-around",
-            xs: "center",
-            md: "space-between",
-            lg: "space-between",
-          },
-        }}
-      >
+      <Box className="footer" sx={{ mx: { xs: 4, lg: 8 } }}>
+        <Typography
+          variant="h2"
+          sx={{
+            mt:4,
+            textAlign: "center",
+            color: "var(--cardBgColor)",
+            fontWeight: 700,
+            textTransform:"uppercase",
+            whiteSpace: "pre-line",
+          }}
+        >
+          {`Let's stay connected.`}
+        </Typography>
         <Box
+          sx={{
+            mt: 3,
+            mb: 7,
+            display: "flex",
+            flexWrap: "wrap",
+            justifyContent: {
+              sm: "space-around",
+              xs: "center",
+              md: "space-between",
+              lg: "space-between",
+            },
+          }}
+        >
+          <Box
             className="animate__animated animate__fadeInUp animate__delay-.5s"
             sx={{ mt: 2, display: "flex", gap: 2 }}
           >
@@ -91,7 +103,7 @@ const Footer = () => {
               />
             </a>
           </Box>
-        {/* <Box
+          {/* <Box
           sx={{
             mt: 2,
             display: "flex",
@@ -136,19 +148,24 @@ const Footer = () => {
             Contact
           </NavLink>
         </Box> */}
-        <Typography
-          variant="body1"
-          sx={{ color: "var(--textColor)", mt: 2, fontSize: "var(--fontSize)" }}
-        >
-          © 2024{" "}
-          <span
-            style={{ color: "var(--brandColor)", cursor: "pointer" }}
-            onClick={() => navigate("/")}
+          <Typography
+            variant="body1"
+            sx={{
+              color: "var(--textColor)",
+              mt: 2,
+              fontSize: "var(--fontSize)",
+            }}
           >
-            geek-sam
-          </span>
-          . All rights reserved.
-        </Typography>
+            © 2024{" "}
+            <span
+              style={{ color: "var(--brandColor)", cursor: "pointer" }}
+              onClick={() => navigate("/")}
+            >
+              geek-sam
+            </span>
+            . All rights reserved.
+          </Typography>
+        </Box>
       </Box>
     </Container>
   );
