@@ -18,8 +18,10 @@ import ServiceSection from "../components/ServiceSection/ServiceSection";
 import TestimonialSection from "../components/Testimonials/TestimonialSection";
 import CTASection from "../components/CTASection";
 import Capsul from "../components/Capsul";
-import Gallery3D from "../components/Gallery3D/Gallery3D";
+// import Gallery3D from "../components/Gallery3D/Gallery3D";
 import AboutSection from "../components/AboutSection/AboutSection";
+// import ParallaxCards from "../components/ParallaxCards/ParallaxCards";
+import CardContainer from "../components/ParallaxCards/CardContainer";
 
 const Home = ({ theme }) => {
   // const [ref, inView] = useInView({
@@ -60,7 +62,7 @@ const Home = ({ theme }) => {
               display: "flex",
               flexDirection: "column",
               alignItems: "center",
-              height: "90vh",
+              height: {xs:"820px",md:"800px"},
               py: { xs: 3, sm: 12 },
               position: "relative",
             }}
@@ -161,7 +163,8 @@ const Home = ({ theme }) => {
 
           {/* <WhatIDo/> */}
           {/* Featuring Projects Section */}
-          <FeaturingProjects />
+          <CardContainer />
+          {/* <FeaturingProjects /> */}
 
           {/* Services Section */}
           <ServiceSection />
@@ -171,6 +174,7 @@ const Home = ({ theme }) => {
           <TestimonialSection />
 
           {/* <Gallery3D/> */}
+
 
 
           <CTASection />
