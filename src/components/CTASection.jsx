@@ -9,8 +9,8 @@ function CTASection() {
       sx={{
         // width: "95%",
         margin: "auto",
-        px: 8,
-        py:6,
+        px: { xs: 4, sm: 6, md: 8 },
+        py:{ xs:4, md:6},
         bgcolor: "#000",
         borderRadius: 4,
         position:"relative",
@@ -21,9 +21,10 @@ function CTASection() {
         icon={""}
         label="Looking For a Designer?"
       /> */}
+      <Box sx={{position:"relative", zIndex:1}}>
       <Typography
         sx={{
-          fontSize: "var(--headingSize)",
+          fontSize: {xs:"32px", md:"var(--headingSize)"},
           lineHeight: 1.2,
           fontWeight: 700,
           // mt:2,
@@ -34,7 +35,7 @@ function CTASection() {
       </Typography>
       <Typography
         sx={{
-          fontSize: "var(--headingSize)",
+          fontSize: {xs:"32px", md:"var(--headingSize)"},
           lineHeight: 1.2,
           fontWeight: 700,
           color:"var(--brandColor)",
@@ -56,6 +57,7 @@ function CTASection() {
                 }}>
                   {`Let's Discuss`}
       </Button>
+      </Box>
       <img src={LineIllustration} alt="" style={{position:"absolute", height:"270px", top:"0", right:"0"}} />
     </Box>
     </Container>

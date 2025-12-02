@@ -3,20 +3,9 @@
   width: 95%;
   max-width: 1200px;
   border-radius: 24px;
-  padding: 50px;
+  padding: 48px;
   transform-origin: top;
   pointer-events: auto;
-}
-
-.cardContainer .card .cardBody .description span {
-  display: flex;
-  align-items: center;
-  gap: 5px;
-}
-
-.cardContainer .card .cardBody .description span a {
-  font-size: 12px;
-  cursor: pointer;
 }
 
 .cardContainer .card .cardBody .imageContainer {
@@ -31,4 +20,8 @@
   height: 100%;
 }
 
-
+@media screen and (max-width: 480px) {
+  .cardContainer .card {
+    padding: 24px;
+  }
+}

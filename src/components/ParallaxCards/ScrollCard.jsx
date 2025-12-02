@@ -64,7 +64,7 @@ const ScrollCard = ({ banner, projectName, description, tags, color, bgcolor }) 
               sx={{
                 mb: 2,
                 whiteSpace: "pre-line",
-                fontSize: "var(--headingSize)",
+                fontSize: {xs:"28px", sm:"var(--headingSize)"},
                 color: "var(--headingColor)",
               }}
             >
