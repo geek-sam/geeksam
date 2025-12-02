@@ -57,12 +57,12 @@ const Home = ({ theme }) => {
           <Box
             classmane="heroSection"
             sx={{
-              mt: 18,
+              mt: { xs: 12, md: 18 },
               px: { xs: 3, sm: 8 },
               display: "flex",
               flexDirection: "column",
               alignItems: "center",
-              height: {xs:"820px",md:"800px"},
+              height: {xs:"780px",md:"800px"},
               py: { xs: 3, sm: 12 },
               position: "relative",
             }}
@@ -92,12 +92,12 @@ const Home = ({ theme }) => {
             <Typography
               variant="h1"
               sx={{
-                fontSize: "var(--heroSize)",
+                fontSize: {xs:"var(--headingSize)", md:"var(--heroSize)"},
                 fontWeight: 700,
                 color: "var(--headingColor)",
                 mt: 4,
                 maxWidth: "700px",
-                lineHeight: "68px",
+                lineHeight: {xs:"52px", md:"68px"},
                 textAlign: "center",
               }}
               className="animate__animated animate__fadeInDown animate__delay-.5s"

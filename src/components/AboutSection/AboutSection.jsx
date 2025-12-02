@@ -13,11 +13,12 @@ function AboutSection() {
         sx={{
           position: "relative",
           border: "1px solid var(--borderColor)",
-          width: "95%",
+          width: {xs:"100%", md:"95%"},
           mx: "auto",
           my: 8,
-          py: 8,
-          px: 4,
+          pt: 8,
+          pb: { xs: 4, md: 8 },
+          px: { xs: 2, md: 4 },
           borderRadius: "24px",
         }}
       >
@@ -54,89 +55,7 @@ function AboutSection() {
           }}
         />
         <Grid container spacing={12}>
-          <Grid item xs={12} sm={12} md={6} lg={6}>
-            <Box
-              sx={{
-                position: "relative",
-                width: { xs: "260px", sm: "360px" },
-                height: { xs: "260px", sm: "360px" },
-                margin: "auto",
-
-                // Radial Glow
-                "&::before": {
-                  content: '""',
-                  position: "absolute",
-                  top: "50%",
-                  left: "50%",
-                  transform: "translate(-50%, -50%)",
-                  width: "420px",
-                  height: "420px",
-                  borderRadius: "50%",
-                  background:
-                    "radial-gradient(circle, rgba(13,110,253,0.22), transparent 75%)",
-                  filter: "blur(40px)",
-                  zIndex: 0, // behind images
-                  transition: "all 0.4s ease",
-                },
-
-                // Hover effect (optional)
-                "&:hover::before": {
-                  opacity: 1,
-                  transform: "translate(-50%, -52%) scale(1)",
-                  filter: "blur(60px)",
-                },
-                "&:hover .image1": {
-                  transform: "translateY(-25px) rotate(-12deg) !important",
-                  bottom: 40,
-                },
-
-                "&:hover .image2": {
-                  transform:
-                    "translateX(30px) translateY(-30px) rotate(18deg) !important",
-                  bottom: 60,
-                },
-              }}
-            >
-              {/* Polaroid 1 */}
-              <Box
-                component="img"
-                className="image1"
-                src={AboutImg1}
-                alt="My 1st Image"
-                sx={{
-                  width: "200px",
-                  position: "absolute",
-                  bottom: 20,
-                  left: 0,
-                  transform: "rotate(-8deg)",
-                  transition: "all 0.4s ease",
-                  boxShadow: "0 8px 20px rgba(0,0,0,0.15)",
-                  borderRadius: "6px",
-                  cursor: "pointer",
-                }}
-              />
-
-              {/* Polaroid 2 */}
-              <Box
-                component="img"
-                className="image2"
-                src={AboutImg2}
-                alt="My 2nd Image"
-                sx={{
-                  width: "200px",
-                  position: "absolute",
-                  bottom: 70,
-                  right: 0,
-                  transform: "rotate(15deg)",
-                  transition: "all 0.4s ease",
-                  boxShadow: "0 8px 20px rgba(0,0,0,0.15)",
-                  borderRadius: "6px",
-                  cursor: "pointer",
-                }}
-              />
-            </Box>
-          </Grid>
-          <Grid item xs={12} sm={12} md={6} lg={6}>
+          <Grid item xs={12} sm={12} md={6} lg={6} order={{ xs: 2, sm: 2, md:1, lg: 1 }}>
             <Typography
               variant="h2"
               gutterBottom
@@ -201,6 +120,66 @@ function AboutSection() {
             >
               {`More about me`}
             </Button>
+          </Grid>
+          <Grid item xs={12} sm={12} md={6} lg={6} order={{ xs: 1, sm: 1, md:2, lg: 2 }}>
+            <Box
+              sx={{
+                position: "relative",
+                width: { xs: "260px", sm: "360px" },
+                height: { xs: "260px", sm: "360px" },
+                mx:"auto",
+                mt:{ xs:4, md:0},
+
+                "&:hover .image1": {
+                  transform: "translateY(-25px) rotate(-12deg) !important",
+                  bottom: 40,
+                },
+
+                "&:hover .image2": {
+                  transform:
+                    "translateX(30px) translateY(-30px) rotate(18deg) !important",
+                  bottom: 60,
+                },
+              }}
+            >
+              {/* Polaroid 1 */}
+              <Box
+                component="img"
+                className="image1"
+                src={AboutImg1}
+                alt="My 1st Image"
+                sx={{
+                  width: "200px",
+                  position: "absolute",
+                  bottom: 20,
+                  left: 0,
+                  transform: "rotate(-8deg)",
+                  transition: "all 0.4s ease",
+                  boxShadow: "0 8px 20px rgba(0,0,0,0.15)",
+                  borderRadius: "6px",
+                  cursor: "pointer",
+                }}
+              />
+
+              {/* Polaroid 2 */}
+              <Box
+                component="img"
+                className="image2"
+                src={AboutImg2}
+                alt="My 2nd Image"
+                sx={{
+                  width: "200px",
+                  position: "absolute",
+                  bottom: 70,
+                  right: 0,
+                  transform: "rotate(15deg)",
+                  transition: "all 0.4s ease",
+                  boxShadow: "0 8px 20px rgba(0,0,0,0.15)",
+                  borderRadius: "6px",
+                  cursor: "pointer",
+                }}
+              />
+            </Box>
           </Grid>
         </Grid>
       </Box>

@@ -1,6 +1,6 @@
 import { Box, Container, Divider, Link, Typography } from "@mui/material";
 import { useNavigate } from "react-router";
-import { NavLink } from "react-router-dom";
+// import { NavLink } from "react-router-dom";
 import { HugeiconsIcon } from "@hugeicons/react";
 import {
   Behance02Icon,
@@ -28,7 +28,7 @@ const Footer = () => {
             whiteSpace: "pre-line",
           }}
         >
-          {`Let's stay connected.`}
+          {`Let's connect`}
         </Typography>
         <Box
           sx={{
@@ -57,7 +57,7 @@ const Footer = () => {
                 strokeWidth={1.5}
               />
             </a>
-            <a href="https://twitter.com/Im__Sam_" target="/">
+            <a href="https://dribbble.com/ux-sam" target="/">
               <HugeiconsIcon
                 className="btnHover"
                 icon={DribbbleIcon}
@@ -66,7 +66,7 @@ const Footer = () => {
                 strokeWidth={1.5}
               />
             </a>
-            <a href="https://twitter.com/Im__Sam_" target="/">
+            <a href="https://www.behance.net/sambhavsahoo" target="/">
               <HugeiconsIcon
                 className="btnHover"
                 icon={Behance02Icon}
@@ -93,7 +93,7 @@ const Footer = () => {
                 strokeWidth={1.5}
               />
             </a>
-            <a href="https://twitter.com/Im__Sam_" target="/">
+            <a href="https://twitter.com/ux_sam_" target="/">
               <HugeiconsIcon
                 className="btnHover"
                 icon={NewTwitterIcon}
