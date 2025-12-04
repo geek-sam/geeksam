@@ -1,7 +1,7 @@
 import {
   Box,
   Button,
-  Container,
+  // Container,
   Typography,
 } from "@mui/material";
 import DotGrid from "../components/DotGrid/DotGrid";
@@ -13,7 +13,6 @@ import FileDownloadOutlinedIcon from "@mui/icons-material/FileDownloadOutlined";
 import NorthEastIcon from "@mui/icons-material/NorthEast";
 import TiltedCard from "../components/TiltedCard/TiltedCard";
 // import WhatIDo from "../components/WhatIDo";
-import FeaturingProjects from "../components/FeaturingProject/FeaturingProjects";
 import ServiceSection from "../components/ServiceSection/ServiceSection";
 import TestimonialSection from "../components/Testimonials/TestimonialSection";
 import CTASection from "../components/CTASection";
@@ -22,6 +21,7 @@ import Capsul from "../components/Capsul";
 import AboutSection from "../components/AboutSection/AboutSection";
 // import ParallaxCards from "../components/ParallaxCards/ParallaxCards";
 import CardContainer from "../components/ParallaxCards/CardContainer";
+import BlogSection from "../components/BlogSection/BlogSection";
 
 const Home = ({ theme }) => {
   // const [ref, inView] = useInView({
@@ -164,7 +164,6 @@ const Home = ({ theme }) => {
           {/* <WhatIDo/> */}
           {/* Featuring Projects Section */}
           <CardContainer />
-          {/* <FeaturingProjects /> */}
 
           {/* Services Section */}
           <ServiceSection />
@@ -174,10 +173,10 @@ const Home = ({ theme }) => {
           <TestimonialSection />
 
           {/* <Gallery3D/> */}
-
-
-
           <CTASection />
+
+          <BlogSection />
+
         </Box>
     </>
   );

@@ -1,3 +1,5 @@
+import { link } from "framer-motion/client";
+
 export const featureProjects = [
   {
     banner: "bharat-wealth.jpg",
@@ -177,117 +179,98 @@ export const projects = [
     projectName: "Marketing Website",
     projectType: "static",
     description:
-      "A website created for the advertising of an web video conferenceing tool presenting it's feature and why one should use this insted of others.",
-    technologies: ["HTML", "CSS", "JavaScript", "Git", "GitHub Pages"],
+      "Landing Page for a video conferencing tool",
+    tags: ["HTML", "CSS", "JavaScript", "Git", "GitHub Pages"],
+    link:"",
   },
   {
     banner: "/images/dcb_ss.png",
     projectName: "DecaCodeBlitz",
     projectType: "reactApp",
     description:
-      "A website for a 10 days event named DecaCodeBlitz, which is used for user registration, get questions and the user result & rankings.",
-    technologies: ["ReactJs", "JavaScript", "MUI", "CSS", "API", "Git"],
+      "Code Challenge Platform  for Colleagues",
+    tags: ["ReactJs", "JavaScript", "MUI", "CSS", "API", "Git"],
+    link:"",
   },
   {
     banner: "/images/bharat-wealth.jpg",
     projectName: "Bharat Wealth",
     projectType: "static",
     description:
-      "A website created for the leading financial services firm providing best in class investment solutions to our clients and being a platform of choice of talented staffs.",
-    technologies: ["HTML", "CSS", "JavaScript", "Git", "GitHub Pages"],
+      "Landing Page for a financial services firm.",
+    tags: ["HTML", "CSS", "JavaScript", "Git", "GitHub Pages"],
+    link:"",
   },
   {
     banner: "/images/AdminPortal.png",
     projectName: "Admin Website",
     projectType: "reactApp",
     description:
-      "Created a web application for a dating application admin portal, which is used by the admin to manage the user and create event, subscription plan, verify user, send matches, and see revenue, profit and loss.",
-    technologies: ["ReactJs", "JavaScript", "MUI", "CSS", "API", "Git"],
+      "Adminn Portal for a Dating Application",
+    tags: ["ReactJs", "JavaScript", "MUI", "CSS", "API", "Git"],
+    link:"",
   },
   {
     banner: "/images/CollabApp.png",
     projectName: "Collab App UI",
     projectType: "static",
     description:
-      "The project aims to establish a dynamic platform facilitating a symbiotic relationship between clients and xperts looking for project opportunities.",
-    technologies: ["Figma", "HTML", "JavaScript", "CSS", "Bootstrap", "Git"],
-  },
-  {
-    banner: "/images/todo.jpg",
-    projectName: "Todo App",
-    projectType: "reactApp",
-    description:
-      "A todo app having features of creating task lists and also can add sub-tasks to it, on complition of task we can mark them as completed and we can also remove tasks.",
-    technologies: ["ReactJs", "Javascript", "CSS", "MUI", "Git", "Rest API"],
-  },
-  {
-    banner: "/images/chatui.jpg",
-    projectName: "Chat App",
-    projectType: "reactApp",
-    description:
-      "A chat application created for a network where user can register themselves and then they can find other user by searching other users userId, then they can chat with each other.",
-    technologies: ["ReactJs", "Javascript", "CSS", "MUI", "API", "Git"],
-  },
-  {
-    banner: "/images/WeatherApp.jpg",
-    projectName: "Weather App",
-    projectType: "reactApp",
-    description:
-      "Weather application to know the current weather status and also can see the weather forecast of next seven days and also check .",
-    technologies: ["ReactJs", "Javascript", "CSS", "MUI", "API", "Git"],
+      "WebApp for Hire Eperts & Get Hired",
+    tags: ["Figma", "HTML", "JavaScript", "CSS", "Bootstrap", "Git"],
+    link:"",
   },
   {
     banner: "/images/StreamingApp.jpg",
     projectName: "Video Streaming App",
     projectType: "uiDesign",
     description:
-      "This application is to stream live videos, share online gifts, create closed rooms for discussion etc. The admin application is to manage the user.",
-    technologies: ["Figma", "Photoshop", "Illustator"],
+      "Live Video Streaming & Gift Sharing App",
+    tags: ["Figma", "Photoshop", "Illustator"],
+    link:"",
   },
   {
     banner: "/images/SurveyApp.jpg",
     projectName: "On-field Survey App",
     projectType: "uiDesign",
     description:
-      "On-field Surveyors can travel to the field to capture the coordinates of the electric poles and equipment used in a connection etc.",
-    technologies: ["Figma", "Photoshop"],
+      "Electric Pole Route Survey Application",
+    tags: ["Figma", "Photoshop"],
+    link:"",
   },
   {
     banner: "/images/DatingApp.jpg",
     projectName: "Dating App",
     projectType: "uiDesign",
     description:
-      "A dating app aims to a create a platform where anyone can connect with the people of their similar interest and also can chat with them.",
-    technologies: ["Figma", "Photoshop", "Illustator"],
+      "Modern Dating App to find perfect match",
+    tags: ["Figma", "Photoshop", "Illustator"],
+    link:"",
   },
 ];
 
 export const blogs = [
   {
-    date: "July 28, 2024",
+    date: "April 03, 2025",
     isNew: true,
     blogType: "Git",
-    heading: "Best Practices for Git Branching",
-    subHeading:
-      "A structured branching strategy is essential for maintaining a clean, efficient, and collaborative Git workflow. Here are some best practices for branch structure and working with branches effectively:",
+    heading: "Best practices to follow for Branching in Git",
+    banner: "/images/gitBranching.png",
     link: "https://medium.com/@sambhav18/best-practices-for-git-branching-0af90c1faf37",
   },
   {
-    date: "July 28, 2024",
+    date: "Feb 15, 2025",
     isNew: false,
     blogType: "UI/UX",
-    heading: "Choose the Perfect Font for Your Logo",
-    subHeading:
-      "Choosing the perfect font for a logo is crucial because typography plays a significant role in conveying a brand’s identity, values, and tone. The right font can enhance a logo’s design, making it memorable,",
+    heading: "How to choose perfect font for your next Logo Design Project",
+    banner: "/images/logoFont.png",
     link: "https://medium.com/@sambhav18/choose-the-perfect-font-for-your-logo-33cbc9de05f3",
   },
   {
-    date: "July 28, 2024",
+    date: "Jan 18, 2025",
     isNew: false,
     blogType: "React",
-    heading: "Absolute Imports In React",
-    subHeading:
-      "Using absolute imports in a React project simplifies import paths by avoiding long, complex relative paths like ../../../components/Button. Instead, you can import files directly from the root of the project ",
+    heading: "How to make Absolute Imports In React",
+    banner: "/images/absoluteImports.png",
     link: "https://medium.com/@sambhav18/absolute-imports-in-react-a834a2372a82",
   },
   {
@@ -295,8 +278,7 @@ export const blogs = [
     isNew: false,
     blogType: "UI/UX",
     heading: "Can AI replace the designers in the future?",
-    subHeading:
-      "Whether AI will substitute designers in the future is a complex and multilayered question, it asks for the exploration of the different sides of technology, creativity, and human skills.",
+    banner: "/images/aiDesigners.png",
     link: "https://medium.com/@sambhav18/can-ai-replace-the-designers-in-the-future-092179f9a1eb",
   },
   {
@@ -304,8 +286,7 @@ export const blogs = [
     isNew: false,
     blogType: "UI/UX",
     heading: "Different styles of Headings In Typography",
-    subHeading:
-      "Headings play a crucial role in typography by organizing content, enhancing readability, and guiding users through a document or web page. Without them, users are presented with giant blocks of text that can be hard to understand and digest.",
+    banner: "/images/headingStyles.png",
     link: "https://medium.com/@sambhav18/different-styles-of-headings-in-typography-a1aa4b3241dc",
   },
   {
@@ -314,8 +295,7 @@ export const blogs = [
     blogType: "UI/UX",
     heading:
       "The Unspoken Rules: Exploring UI/UX Laws Every Designer Should Know",
-    subHeading:
-      "In the dynamic realm of user interface (UI) and user experience (UX) design, certain fundamental principles serve as guiding lights and shaping the way designers create digital experiences.",
+    banner: "/images/uiuxLaws.png",
     link: "https://medium.com/@sambhav18/the-unspoken-rules-exploring-ui-ux-laws-every-designer-should-know-8fa4439e7cdd",
   },
 ];

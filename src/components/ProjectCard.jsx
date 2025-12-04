@@ -1,16 +1,18 @@
 import {
+  Box,
   // Button,
   Card,
-  // CardActions,
+  CardActions,
   CardContent,
   CardMedia,
+  Link,
   Typography,
 } from "@mui/material";
 import { useInView } from "react-intersection-observer";
 // import React, { useRef } from "react";
 
 const ProjectCard = (props) => {
-  const { projectName, description, banner } = props;
+  const { projectName, description, banner, link, open, setOpen } = props;
 
   // function truncate(str, maxlength) {
   //   return str.length > maxlength ? str.slice(0, maxlength - 1) + "…" : str;
@@ -29,14 +31,29 @@ const ProjectCard = (props) => {
       } animate__delay-.5s`}
       elevation={0}
       sx={{
-        maxWidth: 600,
+        // maxWidth: 340,
+        position: "relative",
         bgcolor: "var(--bgColor)",
         color: "var(--headingColor)",
-        borderRadius: "8px",
-        border: "2px solid var(--cardBgColor)",
+        borderRadius: 4,
+        border: "1px solid var(--cardBgColor)",
       }}
     >
-      <CardMedia sx={{ height: 250 }} image={banner} title="banner" />
+      <Box
+        sx={{
+          position: "absolute",
+          zIndex: 11,
+          top: 0,
+          left: "18.5%",
+          height: "1px",
+          width: "63%",
+          flex: "none",
+          opacity: "1",
+          transform: "none",
+          background: "var(--borderHighlight)",
+        }}
+      />
+
       <CardContent>
         <Typography
           gutterBottom
@@ -49,39 +66,47 @@ const ProjectCard = (props) => {
         <Typography
           variant="body2"
           color="var(--textColor)"
-          sx={{ textAlign: "left", mb: 1 }}
+          sx={{ textAlign: "left" }}
         >
           {/* {truncate(description, 120)} */} {description}
         </Typography>
-        {/* <Box
+      </CardContent>
+      <CardMedia
+        sx={{
+          height: 210,
+          mx: 2,
+          mb: 0,
+          borderRadius: 2,
+          border: "1px solid var(--borderColor)",
+        }}
+        image={banner}
+        title={projectName}
+      />
+      <CardActions>
+        {/* <Button size="small">Learn More</Button> */}
+        <Link
+          href={link || undefined}
+          target={link ? "_blank" : undefined}
+          rel={link ? "noopener noreferrer" : undefined}
           sx={{
+            fontSize: "var(--fontSize)",
+            color: "var(--brandColor)",
+            textDecoration: "none",
             display: "flex",
-            flexDirection: "row",
-            flexWrap: "wrap",
-            width: "100%",
+            ml: 1,
+            cursor: "pointer",
+          }}
+          onClick={(e) => {
+            if (!link) {
+              console.log(open)
+              e.preventDefault(); // Prevent navigation
+              setOpen(true); // Open modal
+            }
           }}
         >
-          {technologies.map((data, index) => (
-            <span
-              key={index}
-              style={{
-                padding: "3px 12px",
-                color: "var(--brandColor)",
-                backgroundColor: "var(--techBg)",
-                borderRadius: "30px",
-                marginTop: "10px",
-                marginRight: "5px",
-                fontSize: "12px",
-              }}
-            >
-              {data}
-            </span>
-          ))}
-        </Box> */}
-      </CardContent>
-      {/* <CardActions>
-        <Button size="small">Learn More</Button>
-      </CardActions> */}
+          View Project
+        </Link>
+      </CardActions>
     </Card>
   );
 };

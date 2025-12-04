@@ -1,11 +1,11 @@
 "use client";
 
-import { Box, Typography, Link, Grid, Chip } from "@mui/material";
+import { Box, Typography, Grid, Chip } from "@mui/material";
 import { useTransform, motion, useScroll } from "framer-motion";
 import { useRef } from "react";
 import "./ScrollCard.css";
 
-const MotionBox = motion(Box);
+const MotionBox = motion.create(Box);
 
 const ScrollCard = ({ banner, projectName, description, tags, color, bgcolor }) => {
   const container = useRef(null);

@@ -1,6 +1,7 @@
-import { Box, Container, Divider, Typography } from "@mui/material";
+import { Box, Container, Divider, Grid, Typography } from "@mui/material";
 import { blogs } from "../../config";
 import BlogCard from "../components/BlogCard";
+import CTASection from "../components/CTASection";
 
 const Blogs = () => (
   <>
@@ -35,21 +36,25 @@ const Blogs = () => (
         {!blogs ? (
           "No blogs Found"
         ) : (
-          <>
+          <Grid container spacing={5} sx={{ mt: 2 }}>
             {blogs.map((data, index) => (
-              <BlogCard
-                key={index}
-                date={data.date}
-                blogType={data.blogType}
-                isNew={data.isNew}
-                heading={data.heading}
-                subHeading={data.subHeading}
-                link={data.link}
-              />
+              <Grid item xs={12} sm={6} md={4} lg={4} key={index}>
+                <BlogCard
+                  key={index}
+                  date={data.date}
+                  blogType={data.blogType}
+                  isNew={data.isNew}
+                  heading={data.heading}
+                  subHeading={data.subHeading}
+                  link={data.link}
+                />
+              </Grid>
             ))}
-          </>
+          </Grid>
         )}
       </Box>
+
+      <CTASection />
     </Container>
   </>
 );
