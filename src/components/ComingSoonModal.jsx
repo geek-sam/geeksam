@@ -9,7 +9,7 @@ export default function ComingSoonModal({ open, onClose }) {
           top: "50%",
           left: "50%",
           transform: "translate(-50%, -50%)",
-          width: "50vw",
+          width: {xs:"90vw", md:"50vw"},
           height: "50vh",
           display: "flex",
           borderRadius:6,
