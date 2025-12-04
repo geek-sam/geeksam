@@ -4,10 +4,11 @@ import LineIllustration from "../../public/images/LineIllustration.png"
 
 function CTASection() {
   return (
-    <Container sx={{ position: "relative" }}>
+    <Container sx={{ position: "relative", mt:8 }}>
     <Box
       sx={{
         // width: "95%",
+        mt:8,
         margin: "auto",
         px: { xs: 4, sm: 6, md: 8 },
         py:{ xs:4, md:6},

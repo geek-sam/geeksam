@@ -1,7 +1,17 @@
-import { Box, Container, Typography } from "@mui/material";
+import {
+  Box,
+  Container,
+  Divider,
+  Grid,
+  Stack,
+  Typography,
+} from "@mui/material";
 import ProjectCard from "../components/ProjectCard";
 import { projects } from "../../config";
 import { useState } from "react";
+import ScrollCard from "../components/ParallaxCards/ScrollCard";
+import CTASection from "../components/CTASection";
+import ComingSoonModal from "../components/ComingSoonModal";
 
 const Projects = () => {
   const style = {
@@ -15,6 +25,7 @@ const Projects = () => {
 
   const [items, setItems] = useState(projects);
   const [active, setActive] = useState(1);
+  const [open, setOpen] = useState(false);
 
   const filterItem = (item) => {
     const updatedItems = projects.filter((currentElement) => {
@@ -28,8 +39,8 @@ const Projects = () => {
 
   return (
     <div>
-      <Container>
-        <Box sx={{ mt: 15, px: { xs: 3, sm: 8 } }}>
+      <Container sx={{ px: { xs: 3, sm: 8 } }}>
+        <Box sx={{ mt: 15 }}>
           <Typography
             variant="h1"
             sx={{
@@ -57,17 +68,13 @@ const Projects = () => {
             development to sleek UI designs. Each project reflects my passion
             for building functional, scalable, and visually appealing digital
             experiences.
-            {/* Many of them are open-source, so if you see something that grabs your interest, check
-            out the code and contribute if you have ideas for how it can be
-            improved. */}
           </Typography>
-          {/* <Divider sx={{ mt: 5, bgcolor: "var(--cardBgColor)" }} /> */}
+          <Divider sx={{ mt: 5, bgcolor: "var(--cardBgColor)" }} />
         </Box>
         <Box
           sx={{
             display: "flex",
             flexDirection: "row",
-            justifyContent: "center",
             mt: 5,
             gap: "15px",
           }}
@@ -110,27 +117,30 @@ const Projects = () => {
             UI Design
           </button>
         </Box>
-        <Box
-          sx={{
-            mt: 3,
-            display: "flex",
-            flexDirection: "row",
-            flexWrap: "wrap",
-            justifyContent: "center",
-            px: { xs: 3, sm: 2 },
-          }}
-        >
+        <Grid container spacing={2} sx={{ mt: 2 }}>
           {items.map((data, index) => (
+            <Grid item xs={12} sm={6} md={4} lg={4} key={index}>
             <ProjectCard
               key={index}
               banner={data.banner}
               projectName={data.projectName}
               description={data.description}
               technologies={data.technologies}
-              duration={data.duration}
+              link={data.link}
+              open={open}
+              setOpen={setOpen}
             />
+            </Grid>
           ))}
-        </Box>
+        </Grid>
+        {/* <Stack spacing={8}>
+          {items.map((project, i) => (
+            <ScrollCard key={`p_${i}`} i={i} {...project} />
+          ))}
+        </Stack> */}
+        <ComingSoonModal open={open} onClose={() => setOpen(false)}/>
+
+        <CTASection />
       </Container>
     </div>
   );

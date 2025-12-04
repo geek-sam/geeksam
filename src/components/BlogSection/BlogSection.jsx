@@ -1,12 +1,10 @@
-import { Box, Container, Grid, Typography } from "@mui/material";
-// import { useState } from "react";
-import { featureProjects } from "../../../config";
-import FeatureProjectCard from "./FeatureProjectCard";
+import { Box, Container, Divider, Grid, Stack, Typography } from "@mui/material";
+import { blogs } from "../../../config";
+import BlogCard from "../BlogCard";
 
-function FeaturingProjects() {
-  // const [items, setItems] = useState(featureProjects);
+function BlogSection() {
   return (
-      <Container sx={{ position: "relative" }}>
+    <Container sx={{ position: "relative", mt:8 }}>
       <Box sx={{ py: 4 }}>
         {/* Featuring Projects Section */}
         <Typography
@@ -22,7 +20,7 @@ function FeaturingProjects() {
           }}
           className="animate__animated animate__fadeInDown animate__delay-.5s"
         >
-          Featured Works
+          My Articles
         </Typography>
         <Typography
           variant="body1"
@@ -40,21 +38,29 @@ function FeaturingProjects() {
           Here are some of my favorite projects that highlight my approach to
           solving real-world problems through design and development.
         </Typography>
-        <Grid container spacing={4} sx={{ mt: 3 }}>
-          {featureProjects.map((data, index) => (
-            <Grid item xs={12} sm={12} md={12} lg={4} key={index}>
-              <FeatureProjectCard
-                banner={data.banner}
-                projectName={data.projectName}
-                description={data.description}
-                projectType={data.projectType}
-              />
-            </Grid>
-           ))}
+        <Grid container spacing={5} sx={{ mt: 2 }}>
+          {blogs.map((data, index) => {
+            if (index < 3) {
+              return (
+                <Grid item xs={12} sm={12} md={4} lg={4} key={index}>
+                  <BlogCard
+                    key={index}
+                    date={data.date}
+                    blogType={data.blogType}
+                    isNew={data.isNew}
+                    heading={data.heading}
+                    subHeading={data.subHeading}
+                    link={data.link}
+                  />
+                  {/* {index < 2 && <Divider sx={{background:"var(--cardBgColor)"}}/>} */}
+                </Grid>
+              );
+            }
+          })}
         </Grid>
       </Box>
-      </Container>
+    </Container>
   );
 }
 
-export default FeaturingProjects;
+export default BlogSection;
