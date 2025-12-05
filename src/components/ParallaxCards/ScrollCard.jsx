@@ -4,17 +4,30 @@ import { Box, Typography, Grid, Chip } from "@mui/material";
 import { useTransform, motion, useScroll } from "framer-motion";
 import { useRef } from "react";
 import "./ScrollCard.css";
+import { useNavigate } from "react-router";
 
 const MotionBox = motion.create(Box);
 
-const ScrollCard = ({ banner, projectName, description, tags, color, bgcolor }) => {
+const ScrollCard = ({
+  banner,
+  projectName,
+  description,
+  tags,
+  setOpen,
+  color,
+  path,
+  bgcolor,
+}) => {
   const container = useRef(null);
+  const navigate = useNavigate();
 
   const { scrollYProgress } = useScroll({
     target: container,
     offset: ["start end", "start start"],
   });
   // console.log(bgcolor)
+
+  const isExternal = (path) => /^https?:\/\//.test(path);
 
   const imageScale = useTransform(scrollYProgress, [0, 1], [2, 1]);
 
@@ -33,6 +46,17 @@ const ScrollCard = ({ banner, projectName, description, tags, color, bgcolor }) 
         pointerEvents: "none",
         transformOrigin: "top",
       }}
+      onClick={(e) => {
+        console.log(path + "path");
+        if (!path) {
+          e.preventDefault(); // Prevent navigation
+          setOpen(true); // Open modal
+        } else if (isExternal(path)) {
+          window.open(path, "_blank");
+        } else {
+          navigate(`/${path}`);
+        }
+      }}
     >
       <MotionBox
         sx={{
@@ -43,11 +67,20 @@ const ScrollCard = ({ banner, projectName, description, tags, color, bgcolor }) 
           background: "var(--bgColor)",
           border: "1px solid var(--borderColor)",
           pointerEvents: "auto",
-          overflow:"hidden"
+          overflow: "hidden",
         }}
         className="card"
       >
-        <Box sx={{position: "absolute", top:0, left:0, background: bgcolor, height: "100%", width: "100%"}} />
+        <Box
+          sx={{
+            position: "absolute",
+            top: 0,
+            left: 0,
+            background: bgcolor,
+            height: "100%",
+            width: "100%",
+          }}
+        />
         <Box
           sx={{
             position: "absolute",
@@ -62,7 +95,12 @@ const ScrollCard = ({ banner, projectName, description, tags, color, bgcolor }) 
             background: color,
           }}
         />
-        <Grid container spacing={4} className="cardBody" sx={{position:"relative"}}>
+        <Grid
+          container
+          spacing={4}
+          className="cardBody"
+          sx={{ position: "relative" }}
+        >
           {/* Description Area */}
           <Grid item xs={12} md={7}>
             <Typography
@@ -72,7 +110,7 @@ const ScrollCard = ({ banner, projectName, description, tags, color, bgcolor }) 
               sx={{
                 mb: 2,
                 whiteSpace: "pre-line",
-                fontSize: {xs:"28px", sm:"var(--headingSize)"},
+                fontSize: { xs: "28px", sm: "var(--headingSize)" },
                 color: "var(--headingColor)",
               }}
             >
@@ -84,7 +122,7 @@ const ScrollCard = ({ banner, projectName, description, tags, color, bgcolor }) 
               gutterBottom
               sx={{
                 mb: 4,
-                maxWidth: {xs:"100%", md:"90%"},
+                maxWidth: { xs: "100%", md: "90%" },
                 lineHeight: 1.6,
                 fontSize: { xs: "14px", md: "16px" },
                 color: "var(--textColor )",

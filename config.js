@@ -1,16 +1,6 @@
 export const featureProjects = [
   {
-    banner: "bharat-wealth.jpg",
-    projectName: "VixaNetwork:\nBuilt for Tomorrow's\nJob Market",
-    description:
-      "From discovering the right opportunities to finding the right talent — it helps professionals and recruiters achieve more with smart tools, verified profiles, and AI-driven matchmaking.",
-    tags: ["Design System", "Wireframing", "Prototyping"],
-    color:
-      "linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgb(79, 70, 229) 50%, rgba(255, 255, 255, 0) 100%)",
-    bgcolor: "linear-gradient(180deg, #00000001 10%, #4f46e54f 100%)",
-  },
-  {
-    banner: "dcb_ss.png",
+    banner: "ProjectImages/dcb_ss.png",
     projectName: "KreditSaathi:\nFrictionless Loans,\nTrusted by Borrowers",
     description:
       "AI powered MSME loan & Instant Credit Application helps India's small businesses get access to GST invoice-based loans and PAN-based personal credit.",
@@ -18,9 +8,21 @@ export const featureProjects = [
     color:
       "linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgb(59, 130, 246) 50%, rgba(255, 255, 255, 0) 100%)",
     bgcolor: "linear-gradient(180deg, #00000001 10%, #3B82F64f 100%)",
+    path: "https://www.behance.net/gallery/234917029/Loan-App-Case-Study",
   },
   {
-    banner: "MarketingApp.png",
+    banner: "ProjectImages/bharat-wealth.jpg",
+    projectName: "VixaNetwork:\nBuilt for Tomorrow's\nJob Market",
+    description:
+      "From discovering the right opportunities to finding the right talent — it helps professionals and recruiters achieve more with smart tools, verified profiles, and AI-driven matchmaking.",
+    tags: ["Design System", "Wireframing", "Prototyping"],
+    color:
+      "linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgb(79, 70, 229) 50%, rgba(255, 255, 255, 0) 100%)",
+    bgcolor: "linear-gradient(180deg, #00000001 10%, #4f46e54f 100%)",
+    path: "",
+  },
+  {
+    banner: "ProjectImages/MarketingApp.png",
     projectName: "HireXpert:\nTo Hire Experts and\nAlso Get Hired",
     description:
       "HireXpert connects skilled professionals with employers, offering a seamless platform to hire experts and get hired faster through smart matching.",
@@ -28,6 +30,7 @@ export const featureProjects = [
     color:
       "linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgb(0, 175, 239) 50%, rgba(255, 255, 255, 0) 100%)",
     bgcolor: "linear-gradient(180deg, #00000001 10%, #00AEEF4f 100%)",
+    path: "",
   },
 ];
 
@@ -182,7 +185,7 @@ export const offerings = [
 
 export const projects = [
   {
-    banner: "/images/MarketingApp.png",
+    banner: "/images/ProjectImages/MarketingApp.png",
     projectName: "Marketing Website",
     projectType: "static",
     description: "Landing Page for a video conferencing tool",
@@ -190,7 +193,7 @@ export const projects = [
     link: "",
   },
   {
-    banner: "/images/dcb_ss.png",
+    banner: "/images/ProjectImages/dcb_ss.png",
     projectName: "DecaCodeBlitz",
     projectType: "reactApp",
     description: "Code Challenge Platform  for Colleagues",
@@ -198,7 +201,7 @@ export const projects = [
     link: "",
   },
   {
-    banner: "/images/bharat-wealth.jpg",
+    banner: "/images/ProjectImages/bharat-wealth.jpg",
     projectName: "Bharat Wealth",
     projectType: "static",
     description: "Landing Page for a financial services firm.",
@@ -206,7 +209,7 @@ export const projects = [
     link: "",
   },
   {
-    banner: "/images/AdminPortal.png",
+    banner: "/images/ProjectImages/AdminPortal.png",
     projectName: "Admin Website",
     projectType: "reactApp",
     description: "Adminn Portal for a Dating Application",
@@ -214,7 +217,7 @@ export const projects = [
     link: "",
   },
   {
-    banner: "/images/CollabApp.png",
+    banner: "/images/ProjectImages/CollabApp.png",
     projectName: "Collab App UI",
     projectType: "static",
     description: "WebApp for Hire Eperts & Get Hired",
@@ -222,7 +225,7 @@ export const projects = [
     link: "",
   },
   {
-    banner: "/images/StreamingApp.jpg",
+    banner: "/images/ProjectImages/StreamingApp.jpg",
     projectName: "Video Streaming App",
     projectType: "uiDesign",
     description: "Live Video Streaming & Gift Sharing App",
@@ -230,7 +233,7 @@ export const projects = [
     link: "",
   },
   {
-    banner: "/images/SurveyApp.jpg",
+    banner: "/images/ProjectImages/SurveyApp.jpg",
     projectName: "On-field Survey App",
     projectType: "uiDesign",
     description: "Electric Pole Route Survey Application",
@@ -238,7 +241,7 @@ export const projects = [
     link: "",
   },
   {
-    banner: "/images/DatingApp.jpg",
+    banner: "/images/ProjectImages/DatingApp.jpg",
     projectName: "Dating App",
     projectType: "uiDesign",
     description: "Modern Dating App to find perfect match",
@@ -253,7 +256,7 @@ export const blogs = [
     isNew: true,
     blogType: "Git",
     heading: "Best practices to follow for Branching in Git",
-    banner: "/images/gitBranching.png",
+    banner: "/images/BlogImages/gitBranching.webp",
     link: "https://medium.com/@sambhav18/best-practices-for-git-branching-0af90c1faf37",
   },
   {
@@ -261,7 +264,7 @@ export const blogs = [
     isNew: false,
     blogType: "UI/UX",
     heading: "How to choose perfect font for your next Logo Design Project",
-    banner: "/images/logoFont.png",
+    banner: "/images/BlogImages/fontForLogo.webp",
     link: "https://medium.com/@sambhav18/choose-the-perfect-font-for-your-logo-33cbc9de05f3",
   },
   {
@@ -269,7 +272,7 @@ export const blogs = [
     isNew: false,
     blogType: "React",
     heading: "How to make Absolute Imports In React",
-    banner: "/images/absoluteImports.png",
+    banner: "/images/BlogImages/absoluteImport.webp",
     link: "https://medium.com/@sambhav18/absolute-imports-in-react-a834a2372a82",
   },
   {
@@ -277,7 +280,7 @@ export const blogs = [
     isNew: false,
     blogType: "UI/UX",
     heading: "Can AI replace the designers in the future?",
-    banner: "/images/aiDesigners.png",
+    banner: "/images/BlogImages/aiDesigner.webp",
     link: "https://medium.com/@sambhav18/can-ai-replace-the-designers-in-the-future-092179f9a1eb",
   },
   {
@@ -285,7 +288,7 @@ export const blogs = [
     isNew: false,
     blogType: "UI/UX",
     heading: "Different styles of Headings In Typography",
-    banner: "/images/headingStyles.png",
+    banner: "/images/BlogImages/Headings.webp",
     link: "https://medium.com/@sambhav18/different-styles-of-headings-in-typography-a1aa4b3241dc",
   },
   {
@@ -294,7 +297,7 @@ export const blogs = [
     blogType: "UI/UX",
     heading:
       "The Unspoken Rules: Exploring UI/UX Laws Every Designer Should Know",
-    banner: "/images/uiuxLaws.png",
+    banner: "/images/BlogImages/uiuxLaws.webp",
     link: "https://medium.com/@sambhav18/the-unspoken-rules-exploring-ui-ux-laws-every-designer-should-know-8fa4439e7cdd",
   },
 ];

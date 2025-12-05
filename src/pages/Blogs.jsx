@@ -47,6 +47,7 @@ const Blogs = () => (
                   heading={data.heading}
                   subHeading={data.subHeading}
                   link={data.link}
+                  banner={data.banner}
                 />
               </Grid>
             ))}

@@ -12,7 +12,7 @@ import { useInView } from "react-intersection-observer";
 // import React, { useRef } from "react";
 
 const ProjectCard = (props) => {
-  const { projectName, description, banner, link, open, setOpen } = props;
+  const { projectName, description, banner, link, setOpen } = props;
 
   // function truncate(str, maxlength) {
   //   return str.length > maxlength ? str.slice(0, maxlength - 1) + "…" : str;
@@ -98,7 +98,6 @@ const ProjectCard = (props) => {
           }}
           onClick={(e) => {
             if (!link) {
-              console.log(open)
               e.preventDefault(); // Prevent navigation
               setOpen(true); // Open modal
             }
