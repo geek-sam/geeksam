@@ -1,5 +1,5 @@
 import { Box, Container, Typography } from "@mui/material";
-import adminPortal from "/images/AdminPortal.png";
+// import adminPortal from "/images/AdminPortal.png";
 
 function ProjectDetails() {
   return (
@@ -23,7 +23,7 @@ function ProjectDetails() {
             Dating App - Admin Website
           </Typography>
           <img
-            src={adminPortal}
+            src={""}
             alt=""
             width="100%"
             style={{
