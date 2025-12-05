@@ -1,29 +1,33 @@
-import { link } from "framer-motion/client";
-
 export const featureProjects = [
   {
     banner: "bharat-wealth.jpg",
     projectName: "VixaNetwork:\nBuilt for Tomorrow's\nJob Market",
-    description: "From discovering the right opportunities to finding the right talent — it helps professionals and recruiters achieve more with smart tools, verified profiles, and AI-driven matchmaking.",
+    description:
+      "From discovering the right opportunities to finding the right talent — it helps professionals and recruiters achieve more with smart tools, verified profiles, and AI-driven matchmaking.",
     tags: ["Design System", "Wireframing", "Prototyping"],
-    color:"linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgb(46, 128, 252) 50%, rgba(255, 255, 255, 0) 100%)",
-    bgcolor: "linear-gradient(180deg, #00000001 0%, #0d6efd07 50%, #2e80fcf5 100%)",
+    color:
+      "linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgb(79, 70, 229) 50%, rgba(255, 255, 255, 0) 100%)",
+    bgcolor: "linear-gradient(180deg, #00000001 10%, #4f46e54f 100%)",
   },
   {
     banner: "dcb_ss.png",
     projectName: "KreditSaathi:\nFrictionless Loans,\nTrusted by Borrowers",
-    description: "AI powered MSME loan & Instant Credit Application helps India's small businesses get access to GST invoice-based loans and PAN-based personal credit.",
-    tags: ["UI/UX","React"],
-    color: "linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgb(46, 67, 252) 50%, rgba(255, 255, 255, 0) 100%)",
-    bgcolor: "linear-gradient(180deg, #00000001 0%, #0d6efd07 50%, #2e43fcf5 100%)",
+    description:
+      "AI powered MSME loan & Instant Credit Application helps India's small businesses get access to GST invoice-based loans and PAN-based personal credit.",
+    tags: ["Wireframing", "User Research", "UI/UX Design", "React"],
+    color:
+      "linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgb(59, 130, 246) 50%, rgba(255, 255, 255, 0) 100%)",
+    bgcolor: "linear-gradient(180deg, #00000001 10%, #3B82F64f 100%)",
   },
   {
     banner: "MarketingApp.png",
     projectName: "HireXpert:\nTo Hire Experts and\nAlso Get Hired",
-    description: "HireXpert connects skilled professionals with employers, offering a seamless platform to hire experts and get hired faster through smart matching.",
-    tags: ["Case study", "Prototyping", "HTML", "css"],
-    color: "linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgb(101, 46, 252) 50%, rgba(255, 255, 255, 0) 100%)",
-    bgcolor: "linear-gradient(180deg, #00000001 0%, #0d6efd07 50%, #652efcf5 100%)",
+    description:
+      "HireXpert connects skilled professionals with employers, offering a seamless platform to hire experts and get hired faster through smart matching.",
+    tags: ["Case study", "Prototyping", "HTML5", "CSS3"],
+    color:
+      "linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgb(0, 175, 239) 50%, rgba(255, 255, 255, 0) 100%)",
+    bgcolor: "linear-gradient(180deg, #00000001 10%, #00AEEF4f 100%)",
   },
 ];
 
@@ -37,17 +41,20 @@ export const servicesData = [
   {
     iconName: "FigmaIcon",
     serviceName: "UI/UX Design",
-    serviceDesc: "Designing intuitive, user-first interfaces that merge aesthetics with seamless functionality.",
+    serviceDesc:
+      "Designing intuitive, user-first interfaces that merge aesthetics with seamless functionality.",
   },
   {
     iconName: "PenTool03Icon",
     serviceName: "Logo Design",
-    serviceDesc: "Creating distinctive logos that capture your brand’s identity and make a lasting impression.",
+    serviceDesc:
+      "Creating distinctive logos that capture your brand’s identity and make a lasting impression.",
   },
   {
     iconName: "BrushIcon",
     serviceName: "Graphic Design",
-    serviceDesc: "Designing engaging visuals for web, social, and print to tell your story with impact.",
+    serviceDesc:
+      "Designing engaging visuals for web, social, and print to tell your story with impact.",
   },
 ];
 
@@ -178,73 +185,65 @@ export const projects = [
     banner: "/images/MarketingApp.png",
     projectName: "Marketing Website",
     projectType: "static",
-    description:
-      "Landing Page for a video conferencing tool",
+    description: "Landing Page for a video conferencing tool",
     tags: ["HTML", "CSS", "JavaScript", "Git", "GitHub Pages"],
-    link:"",
+    link: "",
   },
   {
     banner: "/images/dcb_ss.png",
     projectName: "DecaCodeBlitz",
     projectType: "reactApp",
-    description:
-      "Code Challenge Platform  for Colleagues",
+    description: "Code Challenge Platform  for Colleagues",
     tags: ["ReactJs", "JavaScript", "MUI", "CSS", "API", "Git"],
-    link:"",
+    link: "",
   },
   {
     banner: "/images/bharat-wealth.jpg",
     projectName: "Bharat Wealth",
     projectType: "static",
-    description:
-      "Landing Page for a financial services firm.",
+    description: "Landing Page for a financial services firm.",
     tags: ["HTML", "CSS", "JavaScript", "Git", "GitHub Pages"],
-    link:"",
+    link: "",
   },
   {
     banner: "/images/AdminPortal.png",
     projectName: "Admin Website",
     projectType: "reactApp",
-    description:
-      "Adminn Portal for a Dating Application",
+    description: "Adminn Portal for a Dating Application",
     tags: ["ReactJs", "JavaScript", "MUI", "CSS", "API", "Git"],
-    link:"",
+    link: "",
   },
   {
     banner: "/images/CollabApp.png",
     projectName: "Collab App UI",
     projectType: "static",
-    description:
-      "WebApp for Hire Eperts & Get Hired",
+    description: "WebApp for Hire Eperts & Get Hired",
     tags: ["Figma", "HTML", "JavaScript", "CSS", "Bootstrap", "Git"],
-    link:"",
+    link: "",
   },
   {
     banner: "/images/StreamingApp.jpg",
     projectName: "Video Streaming App",
     projectType: "uiDesign",
-    description:
-      "Live Video Streaming & Gift Sharing App",
+    description: "Live Video Streaming & Gift Sharing App",
     tags: ["Figma", "Photoshop", "Illustator"],
-    link:"",
+    link: "",
   },
   {
     banner: "/images/SurveyApp.jpg",
     projectName: "On-field Survey App",
     projectType: "uiDesign",
-    description:
-      "Electric Pole Route Survey Application",
+    description: "Electric Pole Route Survey Application",
     tags: ["Figma", "Photoshop"],
-    link:"",
+    link: "",
   },
   {
     banner: "/images/DatingApp.jpg",
     projectName: "Dating App",
     projectType: "uiDesign",
-    description:
-      "Modern Dating App to find perfect match",
+    description: "Modern Dating App to find perfect match",
     tags: ["Figma", "Photoshop", "Illustator"],
-    link:"",
+    link: "",
   },
 ];
 
@@ -337,4 +336,4 @@ export const testimonials = [
     text: "Professional, creative, and communicative throughout the whole project. Highly recommended!",
     avatar: "https://i.pravatar.cc/100?img=8",
   },
-]
+];

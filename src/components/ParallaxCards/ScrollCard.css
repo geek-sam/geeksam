@@ -1,4 +1,4 @@
-.cardContainer .card {
+/* .cardContainer .card {
   position: relative;
   width: 95%;
   max-width: 1200px;
@@ -6,13 +6,14 @@
   padding: 48px;
   transform-origin: top;
   pointer-events: auto;
-}
+} */
 
 .cardContainer .card .cardBody .imageContainer {
   position: relative;
   border-radius: 16px;
   overflow: hidden;
   min-height: 320px;
+  border: 4px solid var(---borderColor);
 }
 
 .cardContainer .card .cardBody .imageContainer .inner {
