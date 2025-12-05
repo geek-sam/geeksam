@@ -1,15 +1,7 @@
-import {
-  Box,
-  Container,
-  Divider,
-  Grid,
-  Stack,
-  Typography,
-} from "@mui/material";
+import { Box, Container, Divider, Grid, Typography } from "@mui/material";
 import ProjectCard from "../components/ProjectCard";
 import { projects } from "../../config";
 import { useState } from "react";
-import ScrollCard from "../components/ParallaxCards/ScrollCard";
 import CTASection from "../components/CTASection";
 import ComingSoonModal from "../components/ComingSoonModal";
 
@@ -120,16 +112,15 @@ const Projects = () => {
         <Grid container spacing={2} sx={{ mt: 2 }}>
           {items.map((data, index) => (
             <Grid item xs={12} sm={6} md={4} lg={4} key={index}>
-            <ProjectCard
-              key={index}
-              banner={data.banner}
-              projectName={data.projectName}
-              description={data.description}
-              technologies={data.technologies}
-              link={data.link}
-              open={open}
-              setOpen={setOpen}
-            />
+              <ProjectCard
+                key={index}
+                banner={data.banner}
+                projectName={data.projectName}
+                description={data.description}
+                technologies={data.technologies}
+                link={data.link}
+                setOpen={setOpen}
+              />
             </Grid>
           ))}
         </Grid>
@@ -138,7 +129,7 @@ const Projects = () => {
             <ScrollCard key={`p_${i}`} i={i} {...project} />
           ))}
         </Stack> */}
-        <ComingSoonModal open={open} onClose={() => setOpen(false)}/>
+        <ComingSoonModal open={open} onClose={() => setOpen(false)} />
 
         <CTASection />
       </Container>

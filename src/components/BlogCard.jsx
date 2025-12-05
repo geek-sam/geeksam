@@ -26,23 +26,25 @@ function BlogCard(props) {
           cursor: "pointer",
           flexDirection: "column",
           alignItems: "flex-start",
-          filter: "grayscale(100%)",
           "&:hover": {
-            filter: "grayscale(0%)",
-            transform: "scale(1.08)",
+            // transform: "scale(1.08)",
           },
           "&:hover .heading": {
             color: "var(--headingColor)",
+          },
+          "&:hover .blog-image": {
+            transform: "translateY(-10px)",
           },
           transition: "all 0.3s ease",
         }}
         onClick={() => window.open(link, "_blank")}
       >
-        <Box>
+        <Box sx={{ width: "100%", position: "relative" }}>
           <Box
             component="img"
-            src={banner ? banner : "/images/StreamingApp.jpg"}
+            src={banner ? banner : "/images/BlogImages/gitBranching.webp"}
             alt="image"
+            className="blog-image"
             sx={{
               width: "100%",
               height: 200,
@@ -50,7 +52,7 @@ function BlogCard(props) {
               overflow: "hidden",
               flexShrink: 0,
               objectFit: "cover",
-              transition: "filter 0.3s ease",
+              transition: "transform 0.3s ease",
             }}
           />
         </Box>
@@ -60,7 +62,7 @@ function BlogCard(props) {
               display: "flex",
               flexDirection: "row",
               alignItems: "baseline",
-              gap:2
+              gap: 2,
             }}
           >
             {/* Date */}
@@ -110,7 +112,7 @@ function BlogCard(props) {
           </Box>
           {/* Heading */}
           <Typography
-          className="heading"
+            className="heading"
             variant="body1"
             sx={{
               fontSize: "var(--heading2Size)",
@@ -121,21 +123,6 @@ function BlogCard(props) {
           >
             {heading}
           </Typography>
-
-          {/* Link (action button) */}
-          {/* <Link
-            href={link}
-            to="route"
-            target="_blank"
-            rel="noopener noreferrer"
-            sx={{
-              color: "var(--brandColor)",
-              textDecoration: "none",
-              display: "flex",
-            }}
-          >
-            Read more <ArrowRightAltIcon sx={{ ml: 1 }} />
-          </Link> */}
         </Stack>
       </Card>
     </div>

@@ -51,6 +51,7 @@ function BlogSection() {
                     heading={data.heading}
                     subHeading={data.subHeading}
                     link={data.link}
+                    banner={data.banner}
                   />
                   {/* {index < 2 && <Divider sx={{background:"var(--cardBgColor)"}}/>} */}
                 </Grid>

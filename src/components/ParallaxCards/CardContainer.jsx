@@ -9,7 +9,7 @@ import Lenis from "lenis";
 import ScrollCard from "./ScrollCard";
 import { featureProjects } from "../../../config";
 
-export default function CardContainer() {
+export default function CardContainer({ setOpen }) {
   const container = useRef(null);
 
   useEffect(() => {
@@ -71,7 +71,7 @@ export default function CardContainer() {
         </Typography>
         <Stack spacing={8}>
           {featureProjects.map((project, i) => (
-            <ScrollCard key={`p_${i}`} i={i} {...project} />
+            <ScrollCard setOpen={setOpen} key={`p_${i}`} i={i} {...project} />
           ))}
         </Stack>
       </Box>
