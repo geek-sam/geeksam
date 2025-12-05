@@ -14,6 +14,7 @@ const ScrollCard = ({ banner, projectName, description, tags, color, bgcolor }) 
     target: container,
     offset: ["start end", "start start"],
   });
+  // console.log(bgcolor)
 
   const imageScale = useTransform(scrollYProgress, [0, 1], [2, 1]);
 
@@ -30,16 +31,23 @@ const ScrollCard = ({ banner, projectName, description, tags, color, bgcolor }) 
         position: "sticky",
         top: { xs: "80px", md: "120px" },
         pointerEvents: "none",
+        transformOrigin: "top",
       }}
     >
       <MotionBox
-        style={{
+        sx={{
           position: "relative",
-          backgroundColor: "var(--cardBgColor)",
+          width: "95%",
+          borderRadius: "24px",
+          padding: "48px",
+          background: "var(--bgColor)",
           border: "1px solid var(--borderColor)",
+          pointerEvents: "auto",
+          overflow:"hidden"
         }}
         className="card"
       >
+        <Box sx={{position: "absolute", top:0, left:0, background: bgcolor, height: "100%", width: "100%"}} />
         <Box
           sx={{
             position: "absolute",
@@ -54,7 +62,7 @@ const ScrollCard = ({ banner, projectName, description, tags, color, bgcolor }) 
             background: color,
           }}
         />
-        <Grid container spacing={4} className="cardBody">
+        <Grid container spacing={4} className="cardBody" sx={{position:"relative"}}>
           {/* Description Area */}
           <Grid item xs={12} md={7}>
             <Typography
@@ -96,6 +104,8 @@ const ScrollCard = ({ banner, projectName, description, tags, color, bgcolor }) 
                     borderRadius: "50px",
                     px: 1,
                     pt: 0.2,
+                    backgroundColor: "var(--techBg)",
+                    backdropFilter: "blur(10px)",
                   }}
                 />
               ))}
@@ -112,6 +122,7 @@ const ScrollCard = ({ banner, projectName, description, tags, color, bgcolor }) 
                 justifyContent: "center",
                 alignItems: "center",
                 bgcolor: "#222",
+                // border:"4px solid var(---borderColor)"
               }}
             >
               <MotionBox
