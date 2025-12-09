@@ -14,6 +14,7 @@ import CardContainer from "../components/ParallaxCards/CardContainer";
 import BlogSection from "../components/BlogSection/BlogSection";
 import ComingSoonModal from "../components/ComingSoonModal";
 import { useState } from "react";
+import { useNavigate } from "react-router";
 
 const Home = ({ theme }) => {
   // const [ref, inView] = useInView({
@@ -21,12 +22,13 @@ const Home = ({ theme }) => {
   //   threshold: 0.1, // Trigger when 50% of the element is visible
   // });
   const [open, setOpen] = useState(false);
+  const navigate = useNavigate();
 
   const handleDownload = () => {
-    const pdfUrl = `${window.location.origin}/assets/sam-cv.pdf`;
+    const pdfUrl = `${window.location.origin}/assets/sam_cv_2025.pdf`;
     const anchor = document.createElement("a");
     anchor.href = pdfUrl;
-    anchor.download = "sam-cv.pdf";
+    anchor.download = "sam_cv_2025.pdf";
 
     anchor.click();
   };
@@ -147,7 +149,7 @@ const Home = ({ theme }) => {
                 backgroundColor: "var(--brandColor)",
                 borderRadius: "8px",
               }}
-              // onClick={handleDownload}
+              onClick={() => navigate(`/about`)}
             >
               About Me {<NorthEastIcon sx={{ fontSize: "18px", ml: 1 }} />}
             </Button>
@@ -170,7 +172,7 @@ const Home = ({ theme }) => {
 
         <BlogSection />
 
-        <ComingSoonModal open={open} onClose={() => setOpen(false)}/>
+        <ComingSoonModal open={open} onClose={() => setOpen(false)} />
       </Box>
     </>
   );

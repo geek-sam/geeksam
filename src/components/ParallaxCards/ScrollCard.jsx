@@ -29,7 +29,7 @@ const ScrollCard = ({
 
   const isExternal = (path) => /^https?:\/\//.test(path);
 
-  const imageScale = useTransform(scrollYProgress, [0, 1], [2, 1]);
+  const imageScale = useTransform(scrollYProgress, [0, 1.05], [2, 1]);
 
   return (
     <Box

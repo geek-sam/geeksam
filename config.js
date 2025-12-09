@@ -1,6 +1,6 @@
 export const featureProjects = [
   {
-    banner: "ProjectImages/dcb_ss.png",
+    banner: "ProjectImages/KreditSaathi.webp",
     projectName: "KreditSaathi:\nFrictionless Loans,\nTrusted by Borrowers",
     description:
       "AI powered MSME loan & Instant Credit Application helps India's small businesses get access to GST invoice-based loans and PAN-based personal credit.",
@@ -11,7 +11,7 @@ export const featureProjects = [
     path: "https://www.behance.net/gallery/234917029/Loan-App-Case-Study",
   },
   {
-    banner: "ProjectImages/bharat-wealth.jpg",
+    banner: "ProjectImages/VIXA_Network.webp",
     projectName: "VixaNetwork:\nBuilt for Tomorrow's\nJob Market",
     description:
       "From discovering the right opportunities to finding the right talent — it helps professionals and recruiters achieve more with smart tools, verified profiles, and AI-driven matchmaking.",
@@ -22,8 +22,8 @@ export const featureProjects = [
     path: "",
   },
   {
-    banner: "ProjectImages/MarketingApp.png",
-    projectName: "HireXpert:\nTo Hire Experts and\nAlso Get Hired",
+    banner: "ProjectImages/HireXpert.webp",
+    projectName: "HireXpert:\nTo Hire Experts \nand Get Hired",
     description:
       "HireXpert connects skilled professionals with employers, offering a seamless platform to hire experts and get hired faster through smart matching.",
     tags: ["Case study", "Prototyping", "HTML5", "CSS3"],
