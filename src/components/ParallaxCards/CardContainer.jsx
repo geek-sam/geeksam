@@ -3,7 +3,7 @@
 import { Box, Container, Stack, Typography } from "@mui/material";
 // import { projects } from '../data';
 // import Card from '../components/Card';
-import { useScroll } from "framer-motion";
+// import { useScroll } from "framer-motion";
 import { useEffect, useRef } from "react";
 import Lenis from "lenis";
 import ScrollCard from "./ScrollCard";
