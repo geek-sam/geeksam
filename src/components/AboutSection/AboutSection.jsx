@@ -15,7 +15,8 @@ function AboutSection() {
           border: "1px solid var(--borderColor)",
           width: {xs:"100%", md:"95%"},
           mx: "auto",
-          my: 8,
+          mt:16,
+          mb: 8,
           pt: 8,
           pb: { xs: 4, md: 8 },
           px: { xs: 2, md: 4 },
@@ -40,7 +41,7 @@ function AboutSection() {
             mixBlendMode: "overlay",
           }}
         />
-        <Box
+        {/* <Box
           sx={{
             position: "absolute",
             zIndex: 11,
@@ -53,7 +54,7 @@ function AboutSection() {
             transform: "none",
             background: "var(--borderHighlight)",
           }}
-        />
+        /> */}
         <Grid container spacing={12}>
           <Grid item xs={12} sm={12} md={6} lg={6} order={{ xs: 2, sm: 2, md:1, lg: 1 }}>
             <Typography
