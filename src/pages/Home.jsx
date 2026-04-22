@@ -5,7 +5,7 @@ import WorkOutlineIcon from "@mui/icons-material/WorkOutline";
 import FileDownloadOutlinedIcon from "@mui/icons-material/FileDownloadOutlined";
 import NorthEastIcon from "@mui/icons-material/NorthEast";
 import TiltedCard from "../components/TiltedCard/TiltedCard";
-import ServiceSection from "../components/ServiceSection/ServiceSection";
+// import ServiceSection from "../components/ServiceSection/ServiceSection";
 import TestimonialSection from "../components/Testimonials/TestimonialSection";
 import CTASection from "../components/CTASection";
 import Capsul from "../components/Capsul";
@@ -149,9 +149,9 @@ const Home = ({ theme }) => {
                 backgroundColor: "var(--brandColor)",
                 borderRadius: "8px",
               }}
-              onClick={() => navigate(`/about`)}
+              onClick={() => navigate(`/projects`)}
             >
-              About Me {<NorthEastIcon sx={{ fontSize: "18px", ml: 1 }} />}
+              View My Work {<NorthEastIcon sx={{ fontSize: "18px", ml: 1 }} />}
             </Button>
           </Box>
         </Box>
@@ -161,11 +161,11 @@ const Home = ({ theme }) => {
         <CardContainer setOpen={setOpen} />
 
         {/* Services Section */}
-        <ServiceSection />
+        {/* <ServiceSection /> */}
 
         <AboutSection />
         {/* Testimonials */}
-        <TestimonialSection />
+        {/* <TestimonialSection /> */}
 
         {/* <Gallery3D/> */}
         <CTASection />
